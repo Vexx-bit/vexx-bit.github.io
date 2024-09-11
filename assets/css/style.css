@@ -569,6 +569,10 @@ body, p {
  /* ###########################
    9. Loading Animation
    ########################### */  
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 61eb05b464004d64a3412be27f7bbb2e2e3f183b
   .loading-animation {
       position: fixed;
       top: 0;
