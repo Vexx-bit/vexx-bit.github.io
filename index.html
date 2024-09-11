@@ -373,6 +373,51 @@
         document.body.style.overflow = 'auto';
     }, 300); // Adjust the duration to match the fade-out transition time
 });
+const form = document.querySelector("form");
+        
+form.addEventListener("submit", function(event) {
+    if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    form.classList.add("was-validated");
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+    behavior: 'smooth'
+});
+});
+});
+
+<!-- mail -->
+function sendGmail() {
+const name = document.getElementById('name').value;
+const email = document.getElementById('email').value;
+const subject = document.getElementById('subject').value;
+const message = document.getElementById('message').value;
+
+const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=samuelkangethe825@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + name + '%0AEmail: ' + email + '%0A%0A' + message)}`;
+
+window.open(mailtoLink, '_blank');
+
+const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+const activeElem = function () {
+if (window.scrollY > 100) {
+header.classList.add("active");
+backTopBtn.classList.add("active");
+} else {
+header.classList.remove("active");
+backTopBtn.classList.remove("active");
+}
+}
+
+addEventOnElem(window, "scroll", activeElem);
+}
 
 </script>
 
