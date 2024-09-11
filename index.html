@@ -1,272 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vexx-Bit Portfolio's </title>
-    <link rel="Website Icon" type="png" sizes="16x16" href="favicon-16x16.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vexx-Bit Portfolio</title>
+  <!-- Favicon -->
+  <link rel="Website Icon" type="png" sizes="16x16" href="favicon-16x16.png">
+  
+  <!-- Preload for fonts -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/robotocondensed/v14/roboto-condensed.ttf" as="font" type="font/ttf" crossorigin>
+
+  <!-- Preload for bg,my picture and icons respectively -->
+  <link rel="preload" href="/assets/images/bg2.png" as="image">
+  <link rel="preload" href="/assets/images/3303.png" as="image">
+  <link rel="preload" href="/assets/icons/frontend.png" as="image">
+  <link rel="preload" href="/assets/icons/backend.png" as="image">
+  <link rel="preload" href="/assets/icons/graphic.png" as="image">
+  <link rel="preload" href="/assets/icons/generative.png" as="image">
+  <link rel="preload" href="/assets/icons/seo.png" as="image">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Bootstrap JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
-<body id="top">
-    
+<body>
+
+  <!-- Loader -->
+  <div class="loader"></div>
+  <div class="content">
+      
+  </div>
+
+  <!-- Header section -->
     <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container">
-          <a class="navbar-brand text-dark animate__animated animate__zoomInDown" href="#">Vexx-Bit</a><br>
+          <a class="navbar-brand animate__animated animate__fadeInLeft" style="color: #00BCD4;" href="#">Samuel Kang'ethe</a><br>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item animate__animated animate__zoomInDown">
+              <li class="nav-item ">
                 <a class="nav-link active" aria-current="page" href="#"></a>
               </li>
-              <li class="nav-item animate__animated animate__zoomInDown">
-                <a class="nav-link text-dark" href="#projects">Projects</a>
+              <li class="nav-item ">
+                <a class="nav-link" style="color: #00BCD4;" href="#projects">Projects</a>
               </li>
-              <li class="nav-item animate__animated animate__zoomInDown">
-                <a class="nav-link text-dark" href="#skills">Skills</a>
+              <li class="nav-item ">
+                <a class="nav-link" style="color: #00BCD4;" href="#skills">Skills</a>
                 </li>
-              <li class="nav-item animate__animated animate__zoomInDown">
-                <a class="nav-link text-dark" href="#contact">Contact</a>
+              <li class="nav-item ">
+                <a class="nav-link" style="color: #00BCD4;" href="#contact">Contact</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" style="color: #00BCD4;" href="#here">Pricing</a>
+                </li>
             </ul>
           </div>
         </div>
       </nav>
-      <header class="hero">
-        <h1 class="hero-title animate__animated animate__slideInLeft">Building the<br> Modern Web</h1>
-        <p class="hero-paragraph animate__animated animate__fadeIn">I craft dynamic and visually stunning websites that captivate and engage users. My passion lies in transforming concepts into impactful digital experiences that elevate brands and drive results.</p>
-      </header>
-    
-      <div class="container-fluid showcase">
-        <div class="row">
-            <div class="col-12 skills" id="skills">
-                <div class="row row-cols-2 g-2">
-                    <div class="col-6 skilled">
-                        <h4 class="anim">Frontend Development<i class='bx bx-badge-check'></i></h4>
-                        <p class="anim">Creating beautiful and functional user 
-                            interfaces with HTML5, CSS3, Javascript and Bootstrap 5</p>
-                        </p>
-                    </div>
-                    <div class="col-6 skilled">
-                        <h4 class="anim">Backend Development<i class='bx bx-badge-check'></i></h4>
-                        <p class="anim">Building robust databases and storage solutions with PHP and MySQL, ensuring efficient data management and retrieval.</p>
-                    </div>
-                    <div class="col-6 skilled">
-                        <h4 class="anim">Search Engine Optimization (SEO)<i class='bx bx-badge-check'></i></h4>
-                        <p class="anim">Optimizing websites for better visibility and ranking on search engines, enhancing online presence and attracting more visitors organically.</p>
-                    </div>
-                    <div class="col-6 skilled">
-                        <h4 class="anim">Graphic Design<i class='bx bx-badge-check'></i></h4>
-                        <p class="anim">Designing visually appealing graphics and layouts to enhance website aesthetics, effectively conveying brand identity and message.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="container-fluid resume">
-        <h2 class="anim">Making the web beautiful</h2>
-        <p class="anim">I've worked at the intersection of design
-             and development,crafting elegant solutions to complex problems.
-             My experience includes creating responsive, SEO optimized and accessible websites
-            for a variety of clients </p>
-        <button class="cv-btn" data-bs-toggle="modal" data-bs-target="#cvModal">View CV</button>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 projects" id="projects">
-                <h2 style="text-align: center;margin-top: 7%;" class="animate__animated animate__headShake">My Projects</h2> 
-                    <div class="col-12 ">
-                        <div class="project-card mb-2">
-                            <div class="card-body">
-                                <h5 class="card-title">E-commerce Site</h5>
-                                <p class="card-text">This project involved creating a fully functional e-commerce website using PHP, MySQL, HTML, CSS, and JavaScript. The site includes features such as user authentication, product catalog, shopping cart, and secure payment processing.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 2 months ago</small>
-                                <button class="butn">View Project<i class='bx bx-chevrons-right' style='color:#ffffff'  ></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                    <div class="project-card mb-2">
-                        <div class="card-body">
-                            <h5 class="card-title">Online Writing Freelancers Site</h5>
-                            <p class="card-text">This project involved developing a platform for freelance writers to showcase their skills, connect with clients, and bid on writing projects. It includes features such as user profiles, project bidding, messaging system, and payment processing.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 weeks ago</small>
-                            <button class="butn">View Project<i class='bx bx-chevrons-right' style='color:#ffffff'  ></i></button>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                    <div class="project-card mb-2">
-                        <div class="card-body">
-                            <h5 class="card-title">Tax Return Site</h5>
-                            <p class="card-text">This project involved creating a web application for filing tax returns online. It includes features such as user registration, form submission, calculation of taxes owed or refunds due, and secure data storage.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 1 month ago</small>
-                            <button class="butn">View Project<i class='bx bx-chevrons-right' style='color:#ffffff'  ></i></button>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                    <div class="project-card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Community for techies</h5>
-                            <p class="card-text">This project involved building a community platform for tech enthusiasts to discuss topics, share knowledge, and collaborate on projects. It includes features such as user profiles, discussion forums, private messaging, and file sharing.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 4 weeks ago</small>
-                            <button class="butn">View Project<i class='bx bx-chevrons-right' style='color:#ffffff'  ></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="container contact" id="contact">
-      <h2 class="animate__animated animate__headShake animate__infinite infinite">Get in touch</h2>
-      <p style="text-align: center;">Have a question or want to work together? Send me a message.</p>
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-lg-6">
-                  <form id="contactForm">
-                      <div class="form-floating mb-2">
-                          <input type="text" id="name" class="form-control" placeholder="Enter Name" required>
-                          <label for="name" class="form-label">Name</label>
-                          <div class="invalid-feedback">Please enter your name.</div>
-                      </div>
-                      <div class="form-floating mb-2">
-                          <input type="email" id="email" class="form-control" placeholder="Enter Email" required>
-                          <label for="email" class="form-label">Email</label>
-                          <div class="invalid-feedback">Please enter a valid email address.</div>
-                      </div>
-                      <div class="form-floating mb-2">
-                          <select id="subject" class="form-control" required>
-                              <option value="Collaboration Request">Collaboration Request</option>
-                              <option value="Project Inquiry">Project Inquiry</option>
-                              <option value="Freelance Opportunity">Freelance Opportunity</option>
-                              <option value="Technical Support">Technical Support</option>
-                          </select>
-                          <label for="subject" class="form-label">Select a Subject</label>
-                          <div class="invalid-feedback">Please select a subject.</div>
-                      </div>
-                      <div class="form-floating mb-2">
-                          <textarea class="form-control" id="message" placeholder="Enter Message" rows="3" required></textarea>
-                          <label for="message" class="form-label">Message</label>
-                          <div class="invalid-feedback">Please enter a message.</div>
-                      </div>
-                      <button type="button" onclick="sendGmail()" class="butn" style="font-size: medium;padding: 7px;">Send Message</button>
-                  </form>
-              </div>
+    <!-- Portfolio Hero section -->
+      <div class="container-fluid text-center hero">
+        <div class="row">
+          <div class="col-md-6 hero-text animate__animated animate__fadeInLeft">
+            <h1>Welcome to <span id="my_portfolio">My portfolio</span></h1>
+            <p>We are a cutting-edge technology company specializing in developing innovative solutions for the digital world.</p>
+            <a  class="hero_cta" href="#">Get Quote</a>
           </div>
+          <div class="col-md-6 hero-image">
+            <!-- PHOTO -->
+            <img src="/assets/images/3303.png" alt="Future of Technology">
+          </div>
+        </div>
       </div>
+    
+      <!-- Section 2 -->
+        <section class="section2">
+          <div class="section2-container">
+            <div class="section2-header">
+              <h2>Areas of Expertise</h2>
+              <p>Specializing in innovative digital solutions, I bring creativity and technical expertise to every project. Explore my core areas of expertise below.</p>
+            </div>
+        
+            <div class="section2-grid">
+              <!-- Frontend Development -->
+              <div class="section2-item">
+                <span class="section2-icon">
+                  <img src="/assets/icons/frontend.png" alt="Frontend Development">
+                </span>
+                <div>
+                  <h3>Frontend Development</h3>
+                  <p>Creating visually appealing and responsive interfaces. We focus on crafting user-friendly designs using the latest technologies.</p>
+                </div>
+              </div>
+        
+              <!-- Backend Development -->
+              <div class="section2-item">
+                <span class="section2-icon">
+                  <img src="/assets/icons/backend.png" alt="Backend Development">
+                </span>
+                <div>
+                  <h3>Backend Development</h3>
+                  <p>Developing robust and scalable backend systems to ensure your applications run smoothly. We specialize in secure server-side technologies.</p>
+                </div>
+              </div>
+        
+              <!-- SEO -->
+              <div class="section2-item">
+                <span class="section2-icon">
+                  <img src="/assets/icons/seo.png" alt="SEO">
+                </span>
+                <div>
+                  <h3>SEO</h3>
+                  <p>Improving website visibility and search rankings. Our SEO strategies are designed to drive organic traffic and boost online presence.</p>
+                </div>
+              </div>
+        
+              <!-- Graphic Design -->
+              <div class="section2-item">
+                <span class="section2-icon">
+                  <img src="/assets/icons/graphic.png" alt="Graphic Design">
+                </span>
+                <div>
+                  <h3>Graphic Design</h3>
+                  <p>Designing eye-catching visuals that communicate your brand effectively. We blend creativity with functionality to make your brand stand out.</p>
+                </div>
+              </div>
+              <!-- Generative AI -->
+        <div class="section2-item">
+          <span class="section2-icon">
+            <img src="/assets/icons/generative.png" alt="Generative AI">
+          </span>
+          <div>
+            <h3>Generative AI</h3>
+            <p>Leveraging advanced AI models to create unique content, automate tasks, and enhance user experiences. Our solutions push the boundaries of innovation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- separator -->
+  <!-- <section class="spikes"></section> -->
+
+ <!-- projects -->
+<section class="projects">
+  <div class="projects-container">
+    <h2 class="projects-title">My Projects</h2>
+    <div class="projects-grid">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-image-gallery">
+            <img src="/assets/images/MRD1.webp" alt="Project 1">
+            <img src="/assets/images/MRD2.webp" alt="Project 2">
+            <img src="/assets/images/MRD3.webp" alt="Project 3">
+            <img src="/assets/images/MRD4.webp" alt="Project 4">
+            <img src="/assets/images/MRD5.webp" alt="Project 5">
+            <img src="/assets/images/MRD6.webp" alt="Project 6">
+            <img src="/assets/images/MRD7.webp" alt="Project 7">
+            <img src="/assets/images/MRD8.webp" alt="Project 8">
+            <img src="/assets/images/MRD9.webp" alt="Project 9">
+            <img src="/assets/images/MRD10.webp" alt="Project 10">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Mr. Drip</h3>
+          <p class="project-updated">
+            <i class="bx bx-history"></i> Last updated: Feb 2024
+          </p>
+        </div>
+      </div>
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-image-gallery">
+            <img src="/assets/images/NC1.webp" alt="Project 1">
+            <img src="/assets/images/NC2.webp" alt="Project 2">
+            <img src="/assets/images/NC3.webp" alt="Project 3">
+            <img src="/assets/images/NC4.webp" alt="Project 4">
+            <img src="/assets/images/NC5.webp" alt="Project 5">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Ngara Collection</h3>
+          <p class="project-updated">
+            <i class="bx bx-history"></i> Last updated: Aug 2023
+          </p>
+        </div>
+      </div>
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-image-gallery">
+            <img src="/assets/images/VFD1.webp" alt="Project 1">
+            <img src="/assets/images/VFD2.webp" alt="Project 2">
+            <img src="/assets/images/VFD3.webp" alt="Project 3">
+            <img src="/assets/images/VFD4.webp" alt="Project 4">
+            <img src="/assets/images/VFD5.webp" alt="Project 5">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Victory Fashion Design</h3>
+          <p class="project-updated">
+            <i class="bx bx-history"></i> Last updated: Jul 2024
+          </p>
+        </div>
+      </div>
+      <!-- Project Card 4 -->
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-image-gallery">
+            <img src="/assets/images/TW1.webp" alt="Project 1">
+            <img src="/assets/images/TW2.webp" alt="Project 2">
+            <img src="/assets/images/TW3.webp" alt="Project 3">
+            <img src="/assets/images/TW4.webp" alt="Project 4">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Tax Wizard</h3>
+          <p class="project-updated">
+            <i class="bx bx-history"></i> Last updated: Aug 2023
+          </p>
+        </div>
+      </div>
+      <!-- Project Card 5 -->
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-image-gallery">
+            <img src="/assets/images/POW1.webp" alt="Project 1">
+            <img src="/assets/images/POW2.webp" alt="Project 2">
+            <img src="/assets/images/POW3.webp" alt="Project 3">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Paid Online Writers</h3>
+          <p class="project-updated">
+            <i class="bx bx-history"></i> Last updated: Aug 2024
+          </p>
+        </div>
+      </div>
+      <!-- Project Card 6 -->
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-image-gallery">
+            <img src="/assets/images/CC1.webp" alt="Project 1">
+            <img src="/assets/images/CC2.webp" alt="Project 2">
+            <img src="/assets/images/CC4.webp" alt="Project 3">
+            <img src="/assets/images/CC5.webp" alt="Project 4">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">College Connect</h3>
+          <p class="project-updated">
+            <i class="bx bx-history"></i> Last updated: Aug 2023
+          </p>
+        </div>
+      </div>
+      <!-- Project Card 7 -->
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-image-gallery">
+            <img src="/assets/images/W1.webp" alt="Project 1">
+            <img src="/assets/images/W2.webp" alt="Project 2">
+            <img src="/assets/images/W3.webp" alt="Project 3">
+            <img src="/assets/images/W4.webp" alt="Project 4">
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Writers Site</h3>
+          <p class="project-updated">
+            <i class="bx bx-history"></i> Last updated: June 2023
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-  
-        
-        
+</section>
 
-        <footer>
-          <div class="container-fluid">
-              <div class="footer-content">
-                  <div class="social-icons">
-                      <a href="https://www.linkedin.com/in/samuel-kang-ethe-a09817227"><i class='bx bxl-linkedin bx-md'></i></a>
-                      <a href="https://www.instagram.com/wealth_coder/"><i class='bx bxl-instagram bx-md'></i></a>
-                      <a href="https://wa.me/254706036754?text=Hi%20Samuel,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20project.%20Please%20let%20me%20know%20how%20we%20can%20proceed."><i class='bx bxl-whatsapp bx-md'></i></a>
-                  </div>
-              </div>
-          </div>
-          <!-- copyright -->
-            <div class="container-fluid">
-                <div class="copyright">
-                    <p class="text-center"> &copy; 2024 All rights reserved by <a>Vexx-Bit</a></p>
-                </div>
-            </div>
+ <!-- contact -->
+ <section class="contact" id="contact">
+  <div class="contact-container">
+    <h2 class="contact-title animate__animated animate__headShake animate__infinite infinite">Get in Touch</h2>
+    <p class="contact-description">Have a question or want to work together? Send me a message.</p>
+    <div class="contact-form-container">
+      <form id="contactForm">
+        <div class="form-floating mb-3">
+          <input type="text" id="name" class="form-control" placeholder="Enter Name" value="John Doe" required>
+          <label for="name" class="form-label">Name</label>
+          <div class="invalid-feedback">Please enter your name.</div>
         </div>
-      </footer>
-    
-
-        <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
-    <i class='bx bx-chevron-up' undefined ></i>
-  </a>
-      
-        <script>
-            const form = document.querySelector("form");
-        
-            form.addEventListener("submit", function(event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add("was-validated");
-            });
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    <!-- mail -->
-    function sendGmail() {
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const subject = document.getElementById('subject').value;
-      const message = document.getElementById('message').value;
-  
-      const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=samuelkangethe825@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + name + '%0AEmail: ' + email + '%0A%0A' + message)}`;
-  
-      window.open(mailtoLink, '_blank');
-
-      const header = document.querySelector("[data-header]");
-const backTopBtn = document.querySelector("[data-back-top-btn]");
-
-const activeElem = function () {
-  if (window.scrollY > 100) {
-    header.classList.add("active");
-    backTopBtn.classList.add("active");
-  } else {
-    header.classList.remove("active");
-    backTopBtn.classList.remove("active");
-  }
-}
-
-addEventOnElem(window, "scroll", activeElem);
-  }
-        </script>
-        
-    <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">CV</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p><em>Sorry, I can't provide my CV publicly for privacy reasons. For a detailed overview of my qualifications and experience, please contact me directly to request my CV.</em></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+        <div class="form-floating mb-3">
+          <input type="email" id="email" class="form-control" placeholder="Enter Email" value="john.doe@example.com" required>
+          <label for="email" class="form-label">Email</label>
+          <div class="invalid-feedback">Please enter a valid email address.</div>
         </div>
+        <div class="form-floating mb-3">
+          <select id="subject" class="form-control" required>
+            <option value="Collaboration Request">Collaboration Request</option>
+            <option value="Project Inquiry">Project Inquiry</option>
+            <option value="Freelance Opportunity">Freelance Opportunity</option>
+            <option value="Technical Support">Technical Support</option>
+          </select>
+          <label for="subject" class="form-label">Subject</label>
+          <div class="invalid-feedback">Please select a subject.</div>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" id="message" placeholder="Enter Message" row="10" required></textarea>
+          <label for="message" class="form-label">Message</label>
+          <div class="invalid-feedback">Please enter a message.</div>
+        </div>
+        <button type="button" onclick="sendGmail()" class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <!-- footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h2 class="footer-title">Contact Me</h2>
+      <p class="footer-text">For inquiries or collaborations, feel free to reach out.</p>
+      <ul class="footer-contact">
+        <li><a href="mailto:your-email@example.com"><i class="bx bx-envelope"></i> your-email@example.com</a></li>
+        <li><a href="tel:+1234567890"><i class="bx bx-phone"></i> +123 456 7890</a></li>
+        <li><a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="bx bx-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://github.com/your-profile" target="_blank"><i class="bx bx-github"></i> GitHub</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h2 class="footer-title">Follow Me</h2>
+      <div class="footer-social-links">
+        <a href="https://twitter.com/your-profile" target="_blank" class="social-icon"><i class="bx bxl-twitter"></i></a>
+        <a href="https://facebook.com/your-profile" target="_blank" class="social-icon"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/your-profile" target="_blank" class="social-icon"><i class="bx bxl-instagram"></i></a>
       </div>
     </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Samuel Kang'ethe. All Rights Reserved.</p>
+  </div>
+</footer>
+<!-- Loader Js -->
+<script>
+  window.addEventListener('load', () => {
+    const loadingAnimation = document.getElementById('loading-animation');
+    
+    // Fade out the loader
+    loadingAnimation.style.opacity = '0';
+    
+    // Wait for the fade-out transition to complete
+    setTimeout(() => {
+        // Hide the loader and ensure the body can scroll
+        loadingAnimation.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }, 300); // Adjust the duration to match the fade-out transition time
+});
+
+</script>
+
+
+
 
 </body>
 </html>
