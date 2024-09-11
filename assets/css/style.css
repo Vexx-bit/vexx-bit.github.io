@@ -569,11 +569,6 @@ body, p {
  /* ###########################
    9. Loading Animation
    ########################### */  
-body {
-    margin: 0;
-    overflow: hidden; /* Prevent scrolling while loading */
-  }
-  
   .loading-animation {
       position: fixed;
       top: 0;
