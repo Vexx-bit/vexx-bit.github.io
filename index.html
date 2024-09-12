@@ -1,88 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vexx-Bit Portfolio</title>
-  <!-- Favicon -->
-  <link rel="Website Icon" type="png" sizes="16x16" href="favicon-16x16.png">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vexx-Bit Portfolio showcasing full-stack development, graphic design, and SEO expertise by Samuel Kang'ethe.">
+    <meta name="keywords" content="Samuel Kang'ethe, Vexx-Bit, portfolio, full-stack developer, web developer, graphic designer, SEO expert">
+    <meta name="author" content="Samuel Kang'ethe">
+        
+    <title>Vexx-Bit Portfolio | Samuel Kang'ethe</title>
   
-  <!-- Preload for fonts -->
-  <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/robotocondensed/v14/roboto-condensed.ttf" as="font" type="font/ttf" crossorigin>
-
-  <!-- Preload for bg,my picture and icons respectively -->
-  <link rel="preload" href="/assets/images/bg2.png" as="image">
-  <link rel="preload" href="/assets/images/3303.png" as="image">
-  <link rel="preload" href="/assets/icons/frontend.png" as="image">
-  <link rel="preload" href="/assets/icons/backend.png" as="image">
-  <link rel="preload" href="/assets/icons/graphic.png" as="image">
-  <link rel="preload" href="/assets/icons/generative.png" as="image">
-  <link rel="preload" href="/assets/icons/seo.png" as="image">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
   
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <!-- Boxicons -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css">
-
-  <!-- Bootstrap JS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</head>
+    <!-- Preload for fonts -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/robotocondensed/v14/roboto-condensed.ttf" as="font" type="font/ttf" crossorigin>
+  
+    <!-- Preload for images and icons -->
+    <link rel="preload" href="/assets/images/bg2.png" as="image">
+    <link rel="preload" href="/assets/images/3303.png" as="image">
+    <link rel="preload" href="/assets/icons/frontend.png" as="image">
+    <link rel="preload" href="/assets/icons/backend.png" as="image">
+    <link rel="preload" href="/assets/icons/graphic.png" as="image">
+    <link rel="preload" href="/assets/icons/generative.png" as="image">
+    <link rel="preload" href="/assets/icons/seo.png" as="image">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+    <!-- Boxicons for Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  
+    <!-- Animate.css for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+  
+    <!-- Bootstrap JS with defer -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  
 <body>
-
-  <!-- Loader -->
-  <div class="loader"></div>
-  <div class="content">
-      
-  </div>
-
+  <!-- Preloader -->
+  <div id="loading-animation" class="loading-animation">
+    <div class="logo-container">
+        <h3 class="loading-title">Loading Portfolio...</h3>
+    </div>
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+</div>
   <!-- Header section -->
+  <header>
     <nav class="navbar navbar-expand-sm navbar-dark">
-        <div class="container">
-          <a class="navbar-brand animate__animated animate__fadeInLeft" style="color: #00BCD4;" href="#">Samuel Kang'ethe</a><br>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item ">
-                <a class="nav-link active" aria-current="page" href="#"></a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" style="color: #00BCD4;" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" style="color: #00BCD4;" href="#skills">Skills</a>
-                </li>
-              <li class="nav-item ">
-                <a class="nav-link" style="color: #00BCD4;" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container">
+        <!-- Brand logo -->
+        <a class="navbar-brand animate__animated animate__fadeInLeft" href="#" aria-label="Samuel Kang'ethe Portfolio">
+          <span class="brand-text" style="color: #00BCD4;">Samuel Kang'ethe</span>
+        </a>
+        
+        <!-- Navbar toggler for smaller screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Collapsible Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Navbar links  -->
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00BCD4;" href="#projects">My Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00BCD4;" href="#skills">Technical Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00BCD4;" href="#contact">Contact Me</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </header>
+  
 
     <!-- Portfolio Hero section -->
       <div class="container-fluid text-center hero">
         <div class="row">
           <div class="col-md-6 hero-text animate__animated animate__fadeInLeft">
             <h1>Welcome to <span id="my_portfolio">My portfolio</span></h1>
-            <p>We are a cutting-edge technology company specializing in developing innovative solutions for the digital world.</p>
-            <a  class="hero_cta" href="#">Get Quote</a>
+            <p>Discover my journey as a full-stack developer, solving real-world problems with intuitive and dynamic digital solutions.</p>
+            <a  class="hero_cta" href="#contact">Get Quote</a>
           </div>
           <div class="col-md-6 hero-image">
-            <!-- PHOTO -->
-            <img src="/assets/images/3303.png" alt="Future of Technology">
+            <img src="/assets/images/3303.webp" alt="Future of Technology">
           </div>
         </div>
       </div>
@@ -157,7 +172,7 @@
   <!-- <section class="spikes"></section> -->
 
  <!-- projects -->
-<section class="projects" id="projects">
+ <section class="projects" id="projects">
   <div class="projects-container">
     <h2 class="projects-title">My Projects</h2>
     <div class="projects-grid">
@@ -165,16 +180,16 @@
       <div class="project-card">
         <div class="project-image">
           <div class="project-image-gallery">
-            <img src="/assets/images/MRD1.webp" alt="Project 1">
-            <img src="/assets/images/MRD2.webp" alt="Project 2">
-            <img src="/assets/images/MRD3.webp" alt="Project 3">
-            <img src="/assets/images/MRD4.webp" alt="Project 4">
-            <img src="/assets/images/MRD5.webp" alt="Project 5">
-            <img src="/assets/images/MRD6.webp" alt="Project 6">
-            <img src="/assets/images/MRD7.webp" alt="Project 7">
-            <img src="/assets/images/MRD8.webp" alt="Project 8">
-            <img src="/assets/images/MRD9.webp" alt="Project 9">
-            <img src="/assets/images/MRD10.webp" alt="Project 10">
+            <img src="/assets/images/MRD1.webp" alt="Project 1" loading="lazy">
+            <img src="/assets/images/MRD2.webp" alt="Project 2" loading="lazy">
+            <img src="/assets/images/MRD3.webp" alt="Project 3" loading="lazy">
+            <img src="/assets/images/MRD4.webp" alt="Project 4" loading="lazy">
+            <img src="/assets/images/MRD5.webp" alt="Project 5" loading="lazy">
+            <img src="/assets/images/MRD6.webp" alt="Project 6" loading="lazy">
+            <img src="/assets/images/MRD7.webp" alt="Project 7" loading="lazy">
+            <img src="/assets/images/MRD8.webp" alt="Project 8" loading="lazy">
+            <img src="/assets/images/MRD9.webp" alt="Project 9" loading="lazy">
+            <img src="/assets/images/MRD10.webp" alt="Project 10" loading="lazy">
           </div>
         </div>
         <div class="project-info">
@@ -188,11 +203,11 @@
       <div class="project-card">
         <div class="project-image">
           <div class="project-image-gallery">
-            <img src="/assets/images/NC1.webp" alt="Project 1">
-            <img src="/assets/images/NC2.webp" alt="Project 2">
-            <img src="/assets/images/NC3.webp" alt="Project 3">
-            <img src="/assets/images/NC4.webp" alt="Project 4">
-            <img src="/assets/images/NC5.webp" alt="Project 5">
+            <img src="/assets/images/NC1.webp" alt="Project 1" loading="lazy">
+            <img src="/assets/images/NC2.webp" alt="Project 2" loading="lazy">
+            <img src="/assets/images/NC3.webp" alt="Project 3" loading="lazy">
+            <img src="/assets/images/NC4.webp" alt="Project 4" loading="lazy">
+            <img src="/assets/images/NC5.webp" alt="Project 5" loading="lazy">
           </div>
         </div>
         <div class="project-info">
@@ -206,11 +221,11 @@
       <div class="project-card">
         <div class="project-image">
           <div class="project-image-gallery">
-            <img src="/assets/images/VFD1.webp" alt="Project 1">
-            <img src="/assets/images/VFD2.webp" alt="Project 2">
-            <img src="/assets/images/VFD3.webp" alt="Project 3">
-            <img src="/assets/images/VFD4.webp" alt="Project 4">
-            <img src="/assets/images/VFD5.webp" alt="Project 5">
+            <img src="/assets/images/VFD1.webp" alt="Project 1" loading="lazy">
+            <img src="/assets/images/VFD2.webp" alt="Project 2" loading="lazy">
+            <img src="/assets/images/VFD3.webp" alt="Project 3" loading="lazy">
+            <img src="/assets/images/VFD4.webp" alt="Project 4" loading="lazy">
+            <img src="/assets/images/VFD5.webp" alt="Project 5" loading="lazy">
           </div>
         </div>
         <div class="project-info">
@@ -224,10 +239,10 @@
       <div class="project-card">
         <div class="project-image">
           <div class="project-image-gallery">
-            <img src="/assets/images/TW1.webp" alt="Project 1">
-            <img src="/assets/images/TW2.webp" alt="Project 2">
-            <img src="/assets/images/TW3.webp" alt="Project 3">
-            <img src="/assets/images/TW4.webp" alt="Project 4">
+            <img src="/assets/images/TW1.webp" alt="Project 1" loading="lazy">
+            <img src="/assets/images/TW2.webp" alt="Project 2" loading="lazy">
+            <img src="/assets/images/TW3.webp" alt="Project 3" loading="lazy">
+            <img src="/assets/images/TW4.webp" alt="Project 4" loading="lazy">
           </div>
         </div>
         <div class="project-info">
@@ -241,9 +256,9 @@
       <div class="project-card">
         <div class="project-image">
           <div class="project-image-gallery">
-            <img src="/assets/images/POW1.webp" alt="Project 1">
-            <img src="/assets/images/POW2.webp" alt="Project 2">
-            <img src="/assets/images/POW3.webp" alt="Project 3">
+            <img src="/assets/images/POW1.webp" alt="Project 1" loading="lazy">
+            <img src="/assets/images/POW2.webp" alt="Project 2" loading="lazy">
+            <img src="/assets/images/POW3.webp" alt="Project 3" loading="lazy">
           </div>
         </div>
         <div class="project-info">
@@ -257,10 +272,10 @@
       <div class="project-card">
         <div class="project-image">
           <div class="project-image-gallery">
-            <img src="/assets/images/CC1.webp" alt="Project 1">
-            <img src="/assets/images/CC2.webp" alt="Project 2">
-            <img src="/assets/images/CC4.webp" alt="Project 3">
-            <img src="/assets/images/CC5.webp" alt="Project 4">
+            <img src="/assets/images/CC1.webp" alt="Project 1" loading="lazy">
+            <img src="/assets/images/CC2.webp" alt="Project 2" loading="lazy">
+            <img src="/assets/images/CC4.webp" alt="Project 3" loading="lazy">
+            <img src="/assets/images/CC5.webp" alt="Project 4" loading="lazy">
           </div>
         </div>
         <div class="project-info">
@@ -274,10 +289,10 @@
       <div class="project-card">
         <div class="project-image">
           <div class="project-image-gallery">
-            <img src="/assets/images/W1.webp" alt="Project 1">
-            <img src="/assets/images/W2.webp" alt="Project 2">
-            <img src="/assets/images/W3.webp" alt="Project 3">
-            <img src="/assets/images/W4.webp" alt="Project 4">
+            <img src="/assets/images/W1.webp" alt="Project 1" loading="lazy">
+            <img src="/assets/images/W2.webp" alt="Project 2" loading="lazy">
+            <img src="/assets/images/W3.webp" alt="Project 3" loading="lazy">
+            <img src="/assets/images/W4.webp" alt="Project 4" loading="lazy">
           </div>
         </div>
         <div class="project-info">
@@ -290,6 +305,7 @@
     </div>
   </div>
 </section>
+
 
  <!-- contact -->
  <section class="contact" id="contact">
@@ -336,18 +352,18 @@
       <h2 class="footer-title">Contact Me</h2>
       <p class="footer-text">For inquiries or collaborations, feel free to reach out.</p>
       <ul class="footer-contact">
-        <li><a href="mailto:your-email@example.com"><i class="bx bx-envelope"></i> your-email@example.com</a></li>
-        <li><a href="tel:+1234567890"><i class="bx bx-phone"></i> +123 456 7890</a></li>
-        <li><a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="bx bx-linkedin"></i> LinkedIn</a></li>
-        <li><a href="https://github.com/your-profile" target="_blank"><i class="bx bx-github"></i> GitHub</a></li>
+        <li><a href="mailto:your-email@example.com"><i class="bx bx-envelope"></i> samuelkangethe825@gmail.com</a></li>
+        <li><a href="tel:+1234567890"><i class="bx bx-phone"></i> +254 706 036 754</a></li>
+        <li><a href="https://www.linkedin.com/in/samuel-k-a09817227" target="_blank"><i class="bx bx-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://github.com/Vexx-bit" target="_blank"><i class="bx bx-github"></i> GitHub</a></li>
       </ul>
     </div>
     <div class="footer-social">
       <h2 class="footer-title">Follow Me</h2>
       <div class="footer-social-links">
-        <a href="https://twitter.com/your-profile" target="_blank" class="social-icon"><i class="bx bxl-twitter"></i></a>
-        <a href="https://facebook.com/your-profile" target="_blank" class="social-icon"><i class="bx bxl-facebook"></i></a>
-        <a href="https://instagram.com/your-profile" target="_blank" class="social-icon"><i class="bx bxl-instagram"></i></a>
+        <a href="#" target="_blank" class="social-icon"><i class="bx bxl-twitter" style="color: #d3d3d3;"></i></a>
+        <a href="#" target="_blank" class="social-icon"><i class="bx bxl-facebook" style="color: #d3d3d3;"></i></a>
+        <a href="https://www.instagram.com/vexx_bit_solutions/" target="_blank" class="social-icon"><i class="bx bxl-instagram"></i></a>
       </div>
     </div>
   </div>
@@ -355,20 +371,12 @@
     <p>&copy; 2024 Samuel Kang'ethe. All Rights Reserved.</p>
   </div>
 </footer>
-<!-- Loader Js -->
+<!-- Custom Js -->
 <script>
+  
   window.addEventListener('load', () => {
     const loadingAnimation = document.getElementById('loading-animation');
-    
-    // Fade out the loader
-    loadingAnimation.style.opacity = '0';
-    
-    // Wait for the fade-out transition to complete
-    setTimeout(() => {
-        // Hide the loader and ensure the body can scroll
-        loadingAnimation.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }, 300); // Adjust the duration to match the fade-out transition time
+    loadingAnimation.style.display = 'none';
 });
 const form = document.querySelector("form");
         
@@ -415,6 +423,18 @@ backTopBtn.classList.remove("active");
 
 addEventOnElem(window, "scroll", activeElem);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const textarea = document.querySelector('#message');
+  
+  function autoResize() {
+    textarea.style.height = 'auto'; // Reset height
+    textarea.style.height = textarea.scrollHeight + 'px'; // Set to scrollHeight
+  }
+  
+  textarea.addEventListener('input', autoResize); // Adjust height on input
+  autoResize(); // Initial adjustment
+});
 
 </script>
 
