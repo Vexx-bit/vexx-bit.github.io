@@ -11,6 +11,13 @@
    9. Contact Section
    10. Footer
    11. Loading Animation
+   5. Infinite Scroll
+   6. About Me
+   7. Section 2
+   8. Projects Section
+   9. Contact Section
+   10. Footer
+   11. Loading Animation
    ################################################ */
 
 /* ###########################
@@ -21,9 +28,38 @@
     scroll-behavior: smooth;
 }
 
+   html {
+    scroll-behavior: smooth;
+}
+
 body{
     background:#263238;
     overflow-x: hidden;;
+    --sb-track-color: #263238;
+    --sb-thumb-color: #00bcd4;
+    --sb-size: 5px;
+}
+  body::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+    
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
     --sb-track-color: #263238;
     --sb-thumb-color: #00bcd4;
     --sb-size: 5px;
@@ -180,10 +216,21 @@ body, p {
     .hero {
         padding-top: calc(70px + 1rem);
     }
+    color:var(--text);
+    padding-top: calc(50px + 1rem);   
+}
+@media (max-width: 774px) {
+    .hero {
+        padding-top: calc(70px + 1rem);
+    }
 }
 
 .hero-text{
     margin-top: 10%;
+    color: #B0BEC5;
+}
+.hero-text h1{
+    color: var(--text);
     color: #B0BEC5;
 }
 .hero-text h1{
@@ -210,6 +257,7 @@ body, p {
 .hero-image img {
     width: 100%; 
     max-width: 400px; 
+    max-width: 400px; 
     height: auto; 
     object-fit: cover; 
     transition: transform 0.3s ease;
@@ -218,6 +266,143 @@ body, p {
 .hero-image img:hover {
     transform: scale(1.05);
 }
+/* ########################### 
+   5. Infinite Scroll
+   ########################### */
+   .wrapper-label{
+    color: var(--primary);
+    padding-top: 2rem;
+   }
+   .wrapper {
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+  
+  @keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+  
+  .item {
+    width: 200px;
+    height: 70px;
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .item img {
+    max-width: 40px; /* Adjust size as needed */
+    max-height: 40px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between image and text */
+  }
+  
+  .item-label{
+    color: var(--secondary);
+  }
+  .item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  }
+  
+  .item2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  }
+  
+  .item3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  }
+  
+  .item4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  }
+  
+  .item5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  }
+  
+  .item6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  }
+  
+  .item7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  }
+  
+  .item8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  }
+/* ########################### 
+   6. About Me
+   ########################### */
+   .about-me {
+    background-color: var(--light-gray); /* Use light gray from palette */
+    color: var(--dark-blue-gray); /* Use dark blue-gray for text */
+    padding: 2rem 1rem;
+    border-top: 2px solid var(--cyan); /* Use cyan for border */
+  }
+  
+  .about-me .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-me h2 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
+    color: var(--primary); /* Use cyan for heading */
+    margin-bottom: 1rem;
+  }
+  
+  .about-me p {
+    color:#B0BEC5;
+    font-size: clamp(1rem, 4vw, 1.25rem); /* Responsive font size */
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .button-container {
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    color:var(--text);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: clamp(0.875rem, 2.5vw, 1rem); /* Responsive font size */
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--dark-blue-gray); /* Dark blue-gray for hover */
+  }
+    
+
+/* ###########################
+   7. Section 2
 /* ########################### 
    5. Infinite Scroll
    ########################### */
@@ -428,6 +613,9 @@ body, p {
     border: solid 1px var(--hover);
     background-color:transparent; 
     padding: 1px;
+    border: solid 1px var(--hover);
+    background-color:transparent; 
+    padding: 1px;
 }
 
 /* tablets */
@@ -489,6 +677,7 @@ body, p {
 } */
 
 /* ###########################
+   8. Projects Section
    8. Projects Section
    ########################### */
 
@@ -580,6 +769,7 @@ body, p {
 }
 /* ###########################
    9. Contact Section
+   9. Contact Section
    ########################### */
 
 .contact {
@@ -663,6 +853,7 @@ body, p {
   }
   /* ###########################
    10. Footer
+   10. Footer
    ########################### */
 
   .footer {
@@ -739,6 +930,7 @@ body, p {
     }
   }
  /* ###########################
+   11. Loading Animation
    11. Loading Animation
    ########################### */  
    .loading-animation {
