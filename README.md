@@ -14,4 +14,4 @@ Integration of modern tools and libraries to enhance functionality and performan
 <h3>Get in Touch</h3><br>
 If you're interested in collaborating or have any questions, feel free to reach out to me by email at samuelkangethe825@gmail.com. I'm always open to discussing new opportunities and challenges.
 
-This portfolio and all associated projects are shared under the MIT License.
+<br>This portfolio and all associated projects are shared under the MIT License.
