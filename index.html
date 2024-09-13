@@ -16,14 +16,12 @@
     <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="https://fonts.gstatic.com/s/robotocondensed/v14/roboto-condensed.ttf" as="font" type="font/ttf" crossorigin>
   
-    <!-- Preload for images and icons -->
-    <link rel="preload" href="/assets/images/bg2.png" as="image">
-    <link rel="preload" href="/assets/images/3303.png" as="image">
-    <link rel="preload" href="/assets/icons/frontend.png" as="image">
-    <link rel="preload" href="/assets/icons/backend.png" as="image">
-    <link rel="preload" href="/assets/icons/graphic.png" as="image">
-    <link rel="preload" href="/assets/icons/generative.png" as="image">
-    <link rel="preload" href="/assets/icons/seo.png" as="image">
+    <!-- Preloads -->
+    <link rel="preload" href="/assets/images/bg2.webp" as="image" type="image/webp">
+    <link rel="preload" href="/assets/images/3303.webp" as="image" type="image/webp">
+
+    <link rel="preload" href="/assets/css/style.css" as="style">
+
   
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
@@ -48,11 +46,12 @@
   <!-- Preloader -->
   <div id="loading-animation" class="loading-animation">
     <div class="logo-container">
-        <h3 class="loading-title">Loading Portfolio...</h3>
+        <h3 class="loading-title">Loading Portfolio</h3>
     </div>
     <div class="spinner-container">
         <div class="spinner"></div>
     </div>
+    <p class="text-light">Please wait...</p>
 </div>
   <!-- Header section -->
   <header>
@@ -73,20 +72,22 @@
           <ul class="navbar-nav ms-auto">
             <!-- Navbar links  -->
             <li class="nav-item">
-              <a class="nav-link" style="color: #00BCD4;" href="#projects">My Projects</a>
+              <a class="nav-link" style="color: #00BCD4;" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: #00BCD4;" href="#skills">Technical Skills</a>
+              <a class="nav-link" style="color: #00BCD4;" href="#skills"> Skills</a>
+            </li>
+            <li class="nav-item"></li>
+              <a class="nav-link" style="color: #00BCD4;" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: #00BCD4;" href="#contact">Contact Me</a>
+              <a class="nav-link" style="color: #00BCD4;" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  
 
     <!-- Portfolio Hero section -->
       <div class="container-fluid text-center hero">
@@ -97,76 +98,104 @@
             <a  class="hero_cta" href="#contact">Get Quote</a>
           </div>
           <div class="col-md-6 hero-image">
-            <img src="/assets/images/3303.webp" alt="Future of Technology">
+            <img src="/assets/images/3303.webp" alt="Samuel Kang'ethe">
           </div>
         </div>
       </div>
     
-      <!-- Section 2 -->
-        <section class="section2" id="skills">
-          <div class="section2-container">
-            <div class="section2-header">
-              <h2>Areas of Expertise</h2>
-              <p>Specializing in innovative digital solutions, I bring creativity and technical expertise to every project. Explore my core areas of expertise below.</p>
-            </div>
-        
-            <div class="section2-grid">
-              <!-- Frontend Development -->
-              <div class="section2-item">
-                <span class="section2-icon">
-                  <img src="/assets/icons/frontend.png" alt="Frontend Development">
-                </span>
-                <div>
-                  <h3>Frontend Development</h3>
-                  <p>Creating visually appealing and responsive interfaces. We focus on crafting user-friendly designs using the latest technologies.</p>
-                </div>
-              </div>
-        
-              <!-- Backend Development -->
-              <div class="section2-item">
-                <span class="section2-icon">
-                  <img src="/assets/icons/backend.png" alt="Backend Development">
-                </span>
-                <div>
-                  <h3>Backend Development</h3>
-                  <p>Developing robust and scalable backend systems to ensure your applications run smoothly. We specialize in secure server-side technologies.</p>
-                </div>
-              </div>
-        
-              <!-- SEO -->
-              <div class="section2-item">
-                <span class="section2-icon">
-                  <img src="/assets/icons/seo.png" alt="SEO">
-                </span>
-                <div>
-                  <h3>SEO</h3>
-                  <p>Improving website visibility and search rankings. Our SEO strategies are designed to drive organic traffic and boost online presence.</p>
-                </div>
-              </div>
-        
-              <!-- Graphic Design -->
-              <div class="section2-item">
-                <span class="section2-icon">
-                  <img src="/assets/icons/graphic.png" alt="Graphic Design">
-                </span>
-                <div>
-                  <h3>Graphic Design</h3>
-                  <p>Designing eye-catching visuals that communicate your brand effectively. We blend creativity with functionality to make your brand stand out.</p>
-                </div>
-              </div>
-              <!-- Generative AI -->
-        <div class="section2-item">
-          <span class="section2-icon">
-            <img src="/assets/icons/generative.png" alt="Generative AI">
-          </span>
-          <div>
-            <h3>Generative AI</h3>
-            <p>Leveraging advanced AI models to create unique content, automate tasks, and enhance user experiences. Our solutions push the boundaries of innovation.</p>
+      <!-- Infinite marquee -->
+      <h4 class="wrapper-label text-center mt-4 ">The technologies i use:</h4> 
+      <div class="wrapper">
+        <div class="item item1"><img src="/assets/svgs/html5.svg" alt="HTML5 Logo"> <span class="item-label">HTML5</span></div>
+        <div class="item item2"><img src="/assets/svgs/css3.svg" alt="CSS3 Logo"> <span class="item-label">CSS3</span></div>
+        <div class="item item3"><img src="/assets/svgs/javascript.svg" alt="JavaScript Logo"><span class="item-label">JavaScript</span></div>
+        <div class="item item4"><img src="/assets/svgs/bootstrap.svg" alt="JavaScript Logo"><span class="item-label">Bootstrap</span></div>
+        <div class="item item5"><img src="/assets/svgs/php.svg" alt="JavaScript Logo"><span class="item-label">PHP</span></div>
+        <div class="item item6"><img src="/assets/svgs/mysql.svg" alt="JavaScript Logo"><span class="item-label">MySQL</span></div>
+        <div class="item item7"><img src="/assets/svgs/python.svg" alt="JavaScript Logo"><span class="item-label">Python</span></div>
+        <div class="item item8"><img src="/assets/svgs/netframework.svg" alt="JavaScript Logo"><span class="item-label">.NET</span></div>
+      </div>
+      <!-- about me -->
+      <section id="about" class="about-me">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>
+            Hi, I'm Samuel Kamau Kang'ethe. I grew up in Murang'a and later in Ruiru, Kenya. My love for technology started when I was just 10, playing around with Microsoft Office and dreaming of building cool software. Looking back, I’m proud of how far I’ve come and excited to use my skills to create new tech solutions and improve user experiences. I'm driven by a love for learning and a desire to continuously improve my skills.
+          </p>
+          <div class="button-container">
+            <a href="/assets/resources/SAMUEL KAMAU KANG'ETHE CV.pdf" class="btn">Download CV</a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
+      
+
+      <!-- Section 2 -->
+      <section class="section2" id="skills">
+        <div class="section2-container">
+          <div class="section2-header">
+            <h2>Areas of Expertise</h2>
+            <p>Specializing in innovative digital solutions, I bring creativity and technical expertise to every project. Explore my core areas of expertise below.</p>
+          </div>
+      
+          <div class="section2-grid">
+            <!-- Frontend Development -->
+            <div class="section2-item">
+              <span class="section2-icon">
+                <img src="/assets/icons/frontend.webp" alt="Frontend Development">
+              </span>
+              <div>
+                <h3>Frontend Development</h3>
+                <p>I craft visually appealing and responsive interfaces, focusing on creating user-friendly designs using the latest technologies.</p>
+              </div>
+            </div>
+      
+            <!-- Backend Development -->
+            <div class="section2-item">
+              <span class="section2-icon">
+                <img src="/assets/icons/backend.webp" alt="Backend Development">
+              </span>
+              <div>
+                <h3>Backend Development</h3>
+                <p>I develop robust and scalable backend systems, ensuring smooth application performance with secure server-side technologies.</p>
+              </div>
+            </div>
+      
+            <!-- SEO -->
+            <div class="section2-item">
+              <span class="section2-icon">
+                <img src="/assets/icons/seo.webp" alt="SEO">
+              </span>
+              <div>
+                <h3>SEO</h3>
+                <p>I enhance website visibility and search rankings, implementing SEO strategies to drive organic traffic and strengthen online presence.</p>
+              </div>
+            </div>
+      
+            <!-- Graphic Design -->
+            <div class="section2-item">
+              <span class="section2-icon">
+                <img src="/assets/icons/graphic.webp" alt="Graphic Design">
+              </span>
+              <div>
+                <h3>Graphic Design</h3>
+                <p>I design captivating visuals that effectively represent your brand, blending creativity with functionality to make it stand out.</p>
+              </div>
+            </div>
+      
+            <!-- Generative AI -->
+            <div class="section2-item">
+              <span class="section2-icon">
+                <img src="/assets/icons/generative.webp" alt="Generative AI">
+              </span>
+              <div>
+                <h3>Generative AI</h3>
+                <p>I leverage LLMs and advanced AI models to automate tasks, create content, and drive innovation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
   <!-- separator -->
   <!-- <section class="spikes"></section> -->
@@ -353,7 +382,7 @@
       <p class="footer-text">For inquiries or collaborations, feel free to reach out.</p>
       <ul class="footer-contact">
         <li><a href="mailto:your-email@example.com"><i class="bx bx-envelope"></i> samuelkangethe825@gmail.com</a></li>
-        <li><a href="tel:+1234567890"><i class="bx bx-phone"></i> +254 706 036 754</a></li>
+        <li><a href="tel:+254706036754"><i class="bx bx-phone"></i> +254 706 036 754</a></li>
         <li><a href="https://www.linkedin.com/in/samuel-k-a09817227" target="_blank"><i class="bx bx-linkedin"></i> LinkedIn</a></li>
         <li><a href="https://github.com/Vexx-bit" target="_blank"><i class="bx bx-github"></i> GitHub</a></li>
       </ul>
@@ -376,7 +405,7 @@
   
   window.addEventListener('load', () => {
     const loadingAnimation = document.getElementById('loading-animation');
-    loadingAnimation.style.display = 'none';
+    loadingAnimation.style.display = 'non';
 });
 const form = document.querySelector("form");
         
