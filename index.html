@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Codegrid" />
+    <title>Rapid Web Ke. | Web Design & Development Agency</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/druk-wide-trial" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/object-sans" rel="stylesheet" />
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/loader.css" />
+
+    <!-- Navigation -->
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+
+    <!-- Sections -->
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <link rel="stylesheet" href="./css/promo.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/prices-hero.css" />
+    <link rel="stylesheet" href="./css/prices.css" />
+    <link rel="stylesheet" href="./css/features.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <!-- Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Spline -->
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"
+    ></script>
+</head>
+
+  <body>
+    <!-- loader -->
+    <div class="loader">
+      <div class="loader-copy">
+        <p id="loader-copy-1">Loading digital excellence</p>
+
+        <p id="loader-copy-2">Crafting innovation</p>
+
+        <p id="loader-copy-3">Get ready for success</p>
+      </div>
+      <div class="progress-bar"></div>
+    </div>
+
+    <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <a href="#hero"><img src="./assets/site-logo.png" alt="Rapid Web KE" /></a>
+      </div>
+
+      <div class="clock">
+        <p>
+          It's
+          <span id="currentTime"></span>
+        </p>
+      </div>
+
+      <div class="ctas">
+        <div class="contact">
+          <div class="contact-icon">
+            <ion-icon name="ellipse-sharp"></ion-icon>
+          </div>
+          <a href="https://wa.me/+254706036754" target="_blank">Let's talk</a>
+        </div>
+
+        <div class="menu">
+          <div class="menu-icon">
+            <ion-icon name="close-sharp"></ion-icon>
+          </div>
+          <p>Menu</p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- menu links -->
+    <div class="menu-container">
+      <div class="whitespace"></div>
+      <div class="whitespace"></div>
+      <div class="menu-items">
+        <a href="#about" class="menu-item">
+          <span>01</span>
+          <span>Who we are</span>
+        </a>
+        <a href="#services" class="menu-item">
+          <span>02</span>
+          <span>Expertise</span>
+        </a>
+        <a href="#cases" class="menu-item">
+          <span>03</span>
+          <span>Work</span>
+        </a>
+        <a href="#prices" class="menu-item">
+          <span>04</span>
+          <span>Prices & Process</span>
+        </a>
+        <a href="#contact" class="menu-item">
+          <span>05</span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- website content -->
+    <div class="container">
+      <!-- hero section -->
+      <section class="hero" id="hero">
+        <div class="hero-img"><img src="./assets/grad.png" alt="" /></div>
+
+        <div class="hero-header">
+          <div class="hero-col">
+            <h1>RAPID WEB KE.</h1>
+          </div>
+          <div class="hero-col">
+            <p id="site-intro">
+              Transforming ideas into digital realities with cutting-edge web solutions, creative design, and seamless development for your success.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about" id="about">
+        <div class="about-header">
+          <div class="about-col">
+            <p class="callout">What drives us</p>
+          </div>
+          <div class="about-col">
+            <h2>
+              Pioneering unique digital experiences with unmatched design and
+              functionality for modern businesses.<span style="opacity: 0">.</span>
+              <span style="opacity: 0">.</span>
+            </h2>
+
+            <p class="about-copy">
+              We specialize in creating transformative web experiences that enhance 
+              business value and elevate user engagement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section class="services" id="services">
+        <div class="services-col">
+          <p class="callout">We work with</p>
+        </div>
+        <div class="services-col">
+          <div class="services-row">
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="logo-google"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Authy</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="layers-sharp"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Design</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="server"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>DBMS</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="shield-checkmark-sharp"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Security</p>
+              </div>
+            </div>
+          </div>
+          <div class="services-row">
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="code-slash"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Development</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="crop-sharp"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Editing</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="search"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>SEO</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="sync"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Automation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- promo  -->
+      <section class="promo" id="cases">
+        <div class="promo-bg">
+          <img src="./assets/grad.png" alt="" />
+        </div>
+        <div class="promo-header">
+          <h2>Check</h2>
+          <h2>Some of Our web</h2>
+          <h1>Designs</h1>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section class="sticky-cards">
+        <section class="projecr-hero pinned"></section>
+
+        <section class="card pinned">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>LMS</h3>
+                <p>01/08</p>
+              </div>
+
+              <p>
+                A dynamic platform for students to easily register for units, track lessons, and manage their timetable. With secure login and real-time updates, it provides a seamless experience for monitoring academic progress.
+              </p>
+
+              <div class="project-cta">
+                <div class="project-cta-row">
+                  <div class="cta"><span>UI/UX</span></div>
+                  <div class="cta"><span>DBMS</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-1.webp" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="card pinned">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>E-COMMERCE</h3>
+                <p>02/08</p>
+              </div>
+              <p>
+                An e-commerce solution that streamlines inventory management and transactions, providing a secure, transparent shopping experience.
+              </p>
+
+              <div class="project-cta">
+                <div class="project-cta-row">
+                  <div class="cta"><span>UI/UX</span></div>
+                  <div class="cta"><span>DBMS</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-8.webp" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="card pinned">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>Restaurant</h3>
+                <p>03/08</p>
+              </div>
+              <p>
+                A system that enhances restaurant orders with secure transactions, customer verification, and a seamless ordering experience.
+              </p>
+
+              <div class="project-cta">
+                <div class="project-cta-row">
+                  <div class="cta"><span>UI/UX</span></div>
+                  <div class="cta"><span>DBMS</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-2.webp" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="card pinned">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>WRITERS SITE</h3>
+                <p>04/08</p>
+              </div>
+              <p>
+                An online platform for writers to showcase their portfolios, manage projects, and connect with clients through a sleek, user-friendly interface.
+              </p>
+
+              <div class="project-cta">
+                <div class="project-cta-row">
+                  <div class="cta"><span>UI/UX</span></div>
+                  <div class="cta"><span>DBMS</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-3.webp" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="card pinned">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>Podcast Site</h3>
+                <p>05/08</p>
+              </div>
+              <p>
+                A creative portfolio website designed to highlight a brand’s expertise and services, with a focus on visually appealing, responsive design.
+              </p>
+
+              <div class="project-cta">
+                <div class="project-cta-row">
+                  <div class="cta"><span>UI/UX</span></div>
+                  <div class="cta"><span>DBMS</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-4.webp" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="card pinned">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>CAR RENTAL</h3>
+                <p>06/08</p>
+              </div>
+              <p>
+                The system offers a user-friendly platform for car rentals, enabling easy browsing, booking, and secure payments with dynamic listings and confirmations.
+              </p>
+
+              <div class="project-cta">
+                <div class="project-cta-row">
+                  <div class="cta"><span>UI/UX</span></div>
+                  <div class="cta"><span>DBMS</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-5.webp" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="card scroll">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>PORTFOLIOS</h3>
+                <p>07/08</p>
+              </div>
+              <p>A creative portfolio website designed to highlight a brand’s expertise and services, with a focus on visually appealing, responsive design.
+              </p>
+
+              <div class="project-cta">
+                <div class="project-cta-row">
+                  <div class="cta"><span>UI/UX</span></div>
+                  <div class="cta"><span>API</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-6.webp" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="footer"></section>
+      </section>
+
+      <!-- prices  -->
+      <section class="prices-hero" id="prices">
+        <div class="prices-bg">
+          <img src="./assets/grad.png" alt="" />
+        </div>
+        <div class="prices-hero-header">
+          <h1>Prices</h1>
+          <h3>And Process</h3>
+        </div>
+      </section>
+
+      <!-- prices -->
+      <section class="prices">
+        <div class="prices-header">
+          <div class="prices-col"></div>
+          <div class="prices-col">
+            <h2>
+              Opt for our subscription model, where you pay a monthly fee for
+              continuous access to our expert team.
+              <span style="opacity: 0">.</span>
+            </h2>
+
+            <p class="prices-copy">
+              This model is ideal for ongoing projects that require consistent
+              updates and support.
+            </p>
+          </div>
+        </div>
+
+        <div class="prices-cta">
+          <a href="#">
+            <h1>Sprint From</h1>
+            <h1>KES 50,000</h1>
+          </a>
+        </div>
+      </section>
+
+      <!-- features -->
+      <section class="features">
+        <div class="features-col">
+          <div class="features-row">
+            <div class="features-item">
+              <div class="features-icon">
+                <img src="./assets/feature-1d.png" alt="" />
+              </div>
+              <div class="features-title">
+                <h2>TRANSPARENT WEEKLY UPDATES</h2>
+                <p>
+                  Our projects are managed in sprints. We collaborate with you
+                  to define objectives, break down the development process into
+                  manageable tasks, and deliver weekly progress reports.
+                </p>
+              </div>
+            </div>
+            <div class="features-item">
+              <div class="features-icon">
+                <img src="./assets/feature-2d.png" alt="" />
+              </div>
+              <div class="features-title">
+                <h2>DETAILED WEEKLY INSIGHTS</h2>
+                <p>
+                  By running our projects in sprints, we ensure clarity and
+                  focus. Together, we outline the necessary tasks and provide
+                  you with detailed weekly reports on our progress.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="features-row">
+            <div class="features-item">
+              <div class="features-icon">
+                <img src="./assets/feature-3d.png" alt="" />
+              </div>
+              <div class="features-title">
+                <h2>CONSISTENT WEEKLY PROGRESS</h2>
+                <p>
+                  We adopt a sprint-based approach for all projects. This
+                  involves setting clear goals, dividing the development into
+                  specific tasks, and delivering consistent weekly updates.
+                </p>
+              </div>
+            </div>
+            <div class="features-item">
+              <div class="features-icon">
+                <img src="./assets/feature-4d.png" alt="" />
+              </div>
+              <div class="features-title">
+                <h2>WEEKLY PROGRESS TRACKING</h2>
+                <p>
+                  Our sprint methodology ensures that we define tasks
+                  collaboratively, segment the entire development process, and
+                  provide transparent weekly progress reports.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+<footer id="contact">
+  <div class="footer-bg">
+    <img src="./assets/grad.png" alt="" />
+  </div>
+  <div class="footer-header">
+    <h1>Let's</h1>
+    <h1>Talk</h1>
+  </div>
+  <div class="footer-sub-header">
+    <h2>Fill the form</h2>
+    <h2>and</h2>
+    <h2>Get in touch</h2>
+  </div>
+
+  <!-- Form -->
+  <div class="form-section">
+    <form>
+        <input
+        id="name"
+        type="text" 
+        name="name" 
+        placeholder="YOUR NAME"
+        required>
+
+        <input 
+        id="company"
+        type="text" 
+        name="company" 
+        placeholder="YOUR COMPANY"
+        required>
+
+        <input
+        id="email" 
+        type="email" 
+        name="email" 
+        placeholder="YOUR EMAIL"
+        required>
+
+        <input 
+        id="budget"
+        type="text"
+        name="budget" 
+        placeholder="ESTIMATE BUDGET"
+        minlength="6"
+        required>
+
+        <!-- message textarea -->
+        <textarea 
+            id="message"
+            name="message" 
+            placeholder="MESSAGE" 
+            minlength="10" 
+            maxlength="300" 
+            required></textarea>
+        <p>Message must be between 10 and 300 characters.</p>
+
+        <div class="button-container">
+            <button onclick="SendMail();" type="submit">SEND</button>
+        </div>
+    </form>
+</div>
+
+  <!-- Call-to-actions -->
+  <div class="footer-ctas">
+    <div class="footer-ctas-col">
+      <div class="footer-cta-icon">
+        <a href="https://www.instagram.com/rapid_web_kenya/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </div>
+      <div class="footer-cta-icon">
+        <a href="https://wa.me/+254706036754" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="footer-ctas-col">
+      <div class="footer-cta-icon">
+        <a href="#hero"><ion-icon name="arrow-up-sharp"></ion-icon></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright">
+    <p><a href="index.html">Rapid Web Ke.</a></p>
+    <p><a href="privacy_policy.html">Privacy Policy</a></p>
+  </div>
+</footer>
+
+    </div>
+
+    <script src="https://unpkg.com/lenis@1.1.4/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="./js/loader.js"></script>
+    <script src="./js/lenis.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/about.js"></script>
+    <script src="./js/projects.js"></script>
+    <script src="./js/prices.js"></script>
+    <script src="./js/email.js"></script>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      //emailjs
+      (function(){
+        emailjs.init("MIq4RwwkuqWv8bU_Z");
+     })();
+    </script>
+  </body>
+</html>
