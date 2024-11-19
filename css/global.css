@@ -1,6 +1,6 @@
 :root {
-  --font-primary: 'Object Sans', sans-serif;
-  --font-secondary: 'Druk Wide Trial', sans-serif;
+  --font-primary: "PP Object Sans";
+  --font-secondary: "Druk Wide Trial";
 
   --color-text: #fff;
   --color-text-secondary: #eaeaea;
@@ -17,7 +17,6 @@
   box-sizing: border-box;
 }
 
-
 html,
 body {
   width: 100%;
@@ -26,11 +25,9 @@ body {
   background-color: var(--color-bg);
 }
 
-
 html.lenis,
 html.lenis body {
   height: auto;
-  overflow: hidden; /* Avoid conflicting scrollbars */
 }
 
 .lenis.lenis-smooth {
@@ -74,9 +71,8 @@ img {
 .container {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* Ensure the container fills the viewport */
+  height: 100%;
   background: var(--color-bg);
-  overflow: hidden; /* Prevent internal scrolling */
 }
 
 .callout {
