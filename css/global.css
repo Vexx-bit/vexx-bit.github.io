@@ -83,55 +83,6 @@ img {
   border-radius: 12px;
   margin-bottom: 2em;
 }
-.custom-alert {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 320px;
-  padding: 20px;
-  background: var(--color-callout);
-  color: var(--color-text);
-  border: 2px solid transparent;
-  border-image: linear-gradient(to right, #9929EA, #5808FB);
-  border-image-slice: 1;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-family: var(--font-primary);
-  animation: fadeIn 0.4s ease;
-}
-
-.custom-alert p {
-  font-size: 1.1rem;
-  color: var(--color-text-secondary);
-}
-
-.custom-alert button {
-  background: linear-gradient(to right, #9929EA, #5808FB);
-  color: var(--color-text);
-  font-size: 0.95rem;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: var(--font-primary);
-  font-weight: bold;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.custom-alert button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(153, 41, 234, 0.6);
-}
-
-.hidden {
-  display: none;
-}
 
 /* Fade-in animation */
 @keyframes fadeIn {
@@ -144,4 +95,44 @@ img {
     transform: translate(-50%, -50%);
   }
 }
+
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #24262a;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  animation: fadeIn 0.4s ease;
+    display: none; /* Initially hidden */
+}
+
+.custom-alert p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.custom-alert button {
+    background: #9929EA;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.custom-alert.hidden {
+    display: none; /* Hide alert when class 'hidden' is added */
+}
+
+.custom-alert.show {
+    display: block; /* Show alert when class 'show' is added */
+}
+
 
