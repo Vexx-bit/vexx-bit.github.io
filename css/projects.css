@@ -1,0 +1,90 @@
+section.card {
+  width: 100vw;
+  height: 100vh;
+}
+
+.card.scroll {
+  position: relative;
+}
+
+.project {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 85%;
+  height: 75%;
+  display: flex;
+}
+
+.project-copy {
+  position: relative;
+  flex: 1.75;
+  border-radius: 12px;
+  padding: 2em;
+  background: var(--color-bg-secondary);
+}
+
+.project-img {
+  flex: 3;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.project-header h3 {
+  color: var(--color-text);
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  font-size: 40px;
+  line-height: 100%;
+}
+
+.project-header p {
+  padding: 0 !important;
+}
+
+.project-copy p {
+  padding: 1em 0;
+}
+
+.project-cta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.project-cta-row {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+}
+
+.cta {
+  flex: 1;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.125);
+}
+
+.cta span {
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project-header h3 {
+    font-size: 24px;
+  }
+}

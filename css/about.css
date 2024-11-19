@@ -1,0 +1,55 @@
+.about {
+  width: 100%;
+  height: max-content;
+  background: var(--color-bg);
+}
+
+.about-header {
+  width: 100%;
+  padding: 20em 0 10em 0;
+  display: flex;
+}
+
+.about-col {
+  padding: 1em;
+}
+
+.about-col:nth-child(1) {
+  flex: 2;
+}
+
+.about-col:nth-child(2) {
+  flex: 4;
+}
+
+.about-col h2 {
+  width: 85%;
+  color: rgba(255, 255, 255, 0.125);
+  transition: color 0.3s;
+}
+
+.about-copy {
+  width: 50%;
+  padding: 10em 1em 5em 1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .about-copy {
+    width: 100%;
+  }
+
+  .about-header {
+    padding: 5em 0 5em 0;
+    flex-direction: column;
+  }
+
+  .about-col h2 {
+    width: 100%;
+    font-size: 64px;
+  }
+
+  .about-copy {
+    padding: 5em 1em 10em 1em;
+  }
+}
