@@ -1,5 +1,5 @@
 <h3>Welcome to My Portfolio</h3><br>
-<a href="https://vexx-bit.github.io/">Visit my portfolio hosted by GitHub Pages</a><br>
+<a href="https://vexx-bit.github.io/" target="blank">Visit my portfolio hosted by GitHub Pages</a><br>
 This is my official portfolio, I'm a passionate and dedicated full-stack developer with a focus on modern web technologies.
 
 <h3>About Me</h3><br>
