@@ -127,6 +127,7 @@ form input,
 form textarea,
 form button {
   all: unset;
+  font-family: var(--font-primary);
   padding: 10px;
   border-radius: 15px;
   background-color: #131416;
