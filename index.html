@@ -664,32 +664,45 @@
         emailjs.init("MIq4RwwkuqWv8bU_Z");
      })();
 
-       function handleFormSubmit(event) {
-    // Prevent the default form submission
-    event.preventDefault();
+       // Show custom alert
+    function showCustomAlert(message) {
+        const alertBox = document.getElementById("customAlert");
+        const alertMessage = document.getElementById("alertMessage");
 
-    // Gather form data
-    var params = {
-        name: document.getElementById('name').value,
-        company: document.getElementById('company').value,
-        email: document.getElementById('email').value,
-        budget: document.getElementById('budget').value,
-        message: document.getElementById('message').value
-    };
+        alertMessage.textContent = message; // Set the alert message
+        alertBox.classList.remove("hidden"); // Show the alert
+    }
 
-    // Use EmailJS to send the email
-    emailjs.send("service_9p3o2fn", "template_k3c2mno", params)
-        .then(function (res) {
-            console.log("Success!", res.status);
-            showCustomAlert("Your message has been sent successfully!");
-            // Clear the form
-            document.getElementById('contactForm').reset();
-        })
-        .catch(function (error) {
-            console.error("Failed to send email:", error);
-            showCustomAlert("Failed to send email. Please try again.");
-        });
-}
+    // Close custom alert
+    function closeCustomAlert() {
+        const alertBox = document.getElementById("customAlert");
+        alertBox.classList.add("hidden"); // Hide the alert
+    }
+
+    // Handle form submission
+    function handleFormSubmit(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const params = {
+            name: document.getElementById("name").value,
+            company: document.getElementById("company").value,
+            email: document.getElementById("email").value,
+            budget: document.getElementById("budget").value,
+            message: document.getElementById("message").value
+        };
+
+        // Send email using EmailJS
+        emailjs.send("service_9p3o2fn", "template_k3c2mno", params)
+            .then((response) => {
+                console.log("Success!", response.status);
+                showCustomAlert("Your message has been sent successfully!");
+                document.getElementById("contactForm").reset(); // Clear the form
+            })
+            .catch((error) => {
+                console.error("Failed to send email:", error);
+                showCustomAlert("Failed to send email. Please try again.");
+            });
+    }
 
     </script>
   </body>
