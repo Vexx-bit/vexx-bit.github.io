@@ -200,3 +200,29 @@ textarea:invalid:not(:placeholder-shown) ~ button[type="submit"] {
     margin-bottom: 3em;
   }
 }
+
+@keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+        }
+        
+        .svg-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            animation: pulse 2s infinite ease-in-out;
+        }
+        
+        .svg-container img {
+            width: 100%;
+            height: auto;
+        }
