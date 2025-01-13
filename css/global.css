@@ -1,5 +1,5 @@
 :root {
-  --font-primary: "PP Object Sans";
+  --font-primary: "Inter", sans-serif;
   --font-secondary: "Druk Wide Trial";
 
   --color-text: #fff;
