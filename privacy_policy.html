@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Rapid Web KE</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.cdnfonts.com/css/druk-wide-trial" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/privacy.css">
+  
+  <!-- GSAP for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <header class="breadcrumb-container">
+    <div class="breadcrumb">
+      <a href="index.html" class="home-link">Home</a>
+      <span>/ Privacy Policy</span>
+    </div>
+  </header>
+
+  <main class="policy-container">
+    <section class="policy-header">
+      <h1>Privacy Policy</h1>
+    </section>
+
+    <div class="policy-content">
+      <section class="policy-section">
+        <h2>Information We Collect</h2>
+        <p>
+          At Rapid Web KE, we value your privacy and are committed to protecting your personal information.
+          We collect and process data with transparency and respect for your privacy rights.
+        </p>
+        <ul>
+          <li>Personal information including your name, email address, and phone number</li>
+          <li>Non-personal data such as browser type and IP address through cookies</li>
+          <li>Usage data to improve our services and user experience</li>
+          <li>Communication records when you contact our support team</li>
+        </ul>
+      </section>
+
+      <section class="policy-section">
+        <h2>How We Use Your Information</h2>
+        <p>Your information helps us deliver and improve our services. We use it to:</p>
+        <ul>
+          <li>Provide and maintain our web development services</li>
+          <li>Respond to your inquiries and support requests</li>
+          <li>Analyze website usage to enhance user experience</li>
+          <li>Send important updates about our services</li>
+        </ul>
+      </section>
+
+      <section class="policy-section">
+        <h2>Data Security</h2>
+        <p>
+          We implement industry-standard security measures to protect your data. While no method of 
+          transmission over the internet is 100% secure, we continuously work to protect your personal
+          information from unauthorized access or disclosure.
+        </p>
+        <ul>
+          <li>Encrypted data transmission using SSL/TLS protocols</li>
+          <li>Regular security audits and updates</li>
+          <li>Strict access controls for our staff</li>
+          <li>Secure data storage with regular backups</li>
+        </ul>
+      </section>
+
+      <section class="policy-section">
+        <h2>Contact Us</h2>
+        <p>
+          If you have questions about this Privacy Policy or our data practices, please reach out to us:
+        </p>
+        <ul>
+          <li>Email: <a href="mailto:support@rapidwebke.com" style="color: #9929EA;">support@rapidwebke.com</a></li>
+          <li>Phone: +254 700 000 000</li>
+          <li>Address: Nairobi, Kenya</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Rapid Web KE. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Initialize GSAP ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate sections on scroll
+    const sections = document.querySelectorAll('.policy-section');
+    sections.forEach((section, index) => {
+      gsap.from(section, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+          end: "top 20%",
+          toggleActions: "play none none reverse"
+        }
+      });
+    });
+
+    // Animate breadcrumb on load
+    gsap.from('.breadcrumb', {
+      opacity: 0,
+      y: -20,
+      duration: 1,
+      ease: "power2.out"
+    });
+
+    // Animate footer on scroll into view
+    gsap.from('.footer', {
+      opacity: 0,
+      y: 20,
+      scrollTrigger: {
+        trigger: '.footer',
+        start: "top bottom",
+        end: "top 80%",
+        toggleActions: "play none none reverse"
+      }
+    });
+  </script>
+</body>
+</html>
