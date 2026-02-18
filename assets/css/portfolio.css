@@ -123,6 +123,21 @@
 
 .footer__bottom a:hover { color: var(--accent); }
 
+.footer__powered {
+  text-align: center;
+  padding-top: 1.5em;
+  margin-top: 1.5em;
+  border-top: 1px solid var(--border);
+  max-width: 1400px; margin: 1.5em auto 0;
+}
+
+.footer__powered a {
+  font-size: 12px; color: var(--text-dim);
+  transition: color 0.3s; letter-spacing: 1px;
+}
+
+.footer__powered a:hover { color: var(--accent); }
+
 /* ─── BACK TO TOP ─── */
 .back-to-top {
   position: fixed; bottom: 2em; right: 2em;
