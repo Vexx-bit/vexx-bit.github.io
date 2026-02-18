@@ -35,6 +35,21 @@
     });
     gsap.ticker.lagSmoothing(0);
 
+    /* --- FILTER BAR FIXED SHOW/HIDE (Lenis-compatible sticky) --- */
+    var filterBar = document.querySelector(".filter-bar");
+    var heroSection = document.querySelector(".portfolio-hero");
+
+    if (filterBar && heroSection) {
+      lenis.on("scroll", function (e) {
+        var heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+        if (e.scroll > heroBottom - 80) {
+          filterBar.classList.add("is-visible");
+        } else {
+          filterBar.classList.remove("is-visible");
+        }
+      });
+    }
+
     /* --- CUSTOM CURSOR --- */
     var cursor = document.querySelector(".cursor");
     var follower = document.querySelector(".cursor-follower");
