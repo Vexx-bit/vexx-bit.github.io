@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <meta name="description" content="Explore Samuel Kamau Kangethe's portfolio - Web Apps, Mobile Apps, Discord Bots, Logos and Video Production.">
+  <meta name="author" content="Samuel Kamau Kangethe">
+  <title>Samuel Kamau Kangethe - All Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body>
+  <!-- Grain Overlay -->
+  <div class="grain"></div>
+
+  <!-- Page Transition -->
+  <div class="page-transition">
+    <div class="transition-row row-1">
+      <div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div>
+    </div>
+    <div class="transition-row row-2">
+      <div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__logo">
+      <a href="index.html" class="nav__logo-text">SK<span class="nav__logo-dot"></span></a>
+    </div>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </div>
+    <div class="nav__actions">
+      <a href="contact.html" class="nav__cta">Get in Touch</a>
+    </div>
+    <div class="nav__hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__links">
+      <a href="index.html" class="mobile-menu__link">Home</a>
+      <a href="#projects" class="mobile-menu__link">Projects</a>
+      <a href="contact.html" class="mobile-menu__link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Portfolio Hero -->
+  <header class="portfolio-hero">
+    <div class="portfolio-hero__content">
+      <div class="portfolio-hero__tag">( Selected Works )</div>
+      <h1 class="portfolio-hero__title">
+        <span class="title-line"><span class="title-word">My</span></span>
+        <span class="title-line"><span class="title-word">Projects</span></span>
+      </h1>
+      <p class="portfolio-hero__desc">A curated collection of my work across web development, mobile apps, automation bots, brand identity, and video production.</p>
+      <div class="portfolio-hero__stats">
+        <div class="stat">
+          <span class="stat__number" data-target="8">0</span>
+          <span class="stat__label">Web Apps</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-target="8">0</span>
+          <span class="stat__label">Logos</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-target="2">0</span>
+          <span class="stat__label">Videos</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-target="18">0</span>
+          <span class="stat__label">Total</span>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-hero__scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </header>
+
+  <!-- Filter Bar -->
+  <section class="filter-bar" id="projects">
+    <div class="filter-bar__inner">
+      <div class="filter-bar__label">Filter by</div>
+      <div class="filter-bar__buttons">
+        <button class="filter-btn active" data-filter="all">
+          <span class="filter-btn__text">All Work</span>
+          <span class="filter-btn__count">18</span>
+        </button>
+        <button class="filter-btn" data-filter="web">
+          <span class="filter-btn__text">Webs</span>
+          <span class="filter-btn__count">8</span>
+        </button>
+        <button class="filter-btn" data-filter="app">
+          <span class="filter-btn__text">Apps</span>
+          <span class="filter-btn__count">0</span>
+        </button>
+        <button class="filter-btn" data-filter="bot">
+          <span class="filter-btn__text">Bots</span>
+          <span class="filter-btn__count">0</span>
+        </button>
+        <button class="filter-btn" data-filter="logo">
+          <span class="filter-btn__text">Logos</span>
+          <span class="filter-btn__count">8</span>
+        </button>
+        <button class="filter-btn" data-filter="video">
+          <span class="filter-btn__text">Videos</span>
+          <span class="filter-btn__count">2</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="projects-section">
+    <div class="projects-grid">
+
+      <!-- â•â•â•â•â•â•â•â•â•â•â• WEB PROJECTS â•â•â•â•â•â•â•â•â•â•â• -->
+      <article class="project-card" data-category="web">
+        <a href="https://sylviejar.vercel.app/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          <div class="project-card__visual">
+            <img src="assets/images/projects/Sylvie_Jar_Proj.webp" alt="Sylvie Jar" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="project-card__view">View Live <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Sylvie Jar</h3>
+            <p class="project-card__desc">A sleek landing page designed to capture pre-launch waitlists and showcase products with elegant visuals.</p>
+            <div class="project-card__meta">
+              <span class="project-card__tag">JavaScript</span>
+              <span class="project-card__tag">HTML5</span>
+              <span class="project-card__tag">SMTP</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card" data-category="web">
+        <a href="https://github.com/Vexx-bit/Search-and-Lead-Tracker" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          <div class="project-card__visual">
+            <img src="assets/images/projects/Lida_Proj.webp" alt="Search and Lead Tracker" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="project-card__view">View on GitHub <i class="fab fa-github"></i></span>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Search &amp; Lead Tracker</h3>
+            <p class="project-card__desc">A PHP-based lead generation tool using custom search APIs across Instagram, TikTok, LinkedIn, and Facebook.</p>
+            <div class="project-card__meta">
+              <span class="project-card__tag">PHP</span>
+              <span class="project-card__tag">JavaScript</span>
+              <span class="project-card__tag">API</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card" data-category="web">
+        <a href="https://asilistart.github.io/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          <div class="project-card__visual">
+            <img src="assets/images/projects/Asili_Start_Proj.webp" alt="Asili Start" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="project-card__view">View Live <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Asili Start Preview</h3>
+            <p class="project-card__desc">A polished landing page previewing startup design presentations with modern layouts and intuitive navigation.</p>
+            <div class="project-card__meta">
+              <span class="project-card__tag">UI/UX</span>
+              <span class="project-card__tag">Design</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card" data-category="web">
+        <a href="https://github.com/Vexx-bit/Student-Restaurant" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          <div class="project-card__visual">
+            <img src="assets/images/projects/project-2.webp" alt="Students Restaurant" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="project-card__view">View on GitHub <i class="fab fa-github"></i></span>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Students Restaurant</h3>
+            <p class="project-card__desc">A digital restaurant solution for students featuring online ordering, menu management, and budget-friendly meals.</p>
+            <div class="project-card__meta">
+              <span class="project-card__tag">PHP</span>
+              <span class="project-card__tag">MySQL</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card" data-category="web">
+        <a href="https://v-f-d.github.io/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          <div class="project-card__visual">
+            <img src="assets/images/projects/project-6.webp" alt="Portfolio Design" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="project-card__view">View Live <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Portfolio Design</h3>
+            <p class="project-card__desc">A creative portfolio highlighting brand expertise and services with visually appealing, responsive design.</p>
+            <div class="project-card__meta">
+              <span class="project-card__tag">JavaScript</span>
+              <span class="project-card__tag">SMTP</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card" data-category="web">
+        <a href="https://github.com/Vexx-bit/LMS" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          <div class="project-card__visual">
+            <img src="assets/images/projects/project-1.webp" alt="LMS Platform" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="project-card__view">View on GitHub <i class="fab fa-github"></i></span>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">LMS Platform</h3>
+            <p class="project-card__desc">A dynamic platform for students to register for units, track lessons, and manage timetables with real-time updates.</p>
+            <div class="project-card__meta">
+              <span class="project-card__tag">PHP</span>
+              <span class="project-card__tag">MySQL</span>
+              <span class="project-card__tag">Bootstrap</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card" data-category="web">
+        <a href="https://github.com/Vexx-bit/MrDrip" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          <div class="project-card__visual">
+            <img src="assets/images/projects/Ecommerce_Proj.webp" alt="E-commerce Platform" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="project-card__view">View on GitHub <i class="fab fa-github"></i></span>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">E-commerce Platform</h3>
+            <p class="project-card__desc">An e-commerce solution streamlining inventory management and transactions with a secure shopping experience.</p>
+            <div class="project-card__meta">
+              <span class="project-card__tag">PHP</span>
+              <span class="project-card__tag">MySQL</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="project-card" data-category="web">
+        <a href="https://github.com/Vexx-bit/Car-Rental" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          <div class="project-card__visual">
+            <img src="assets/images/projects/project-5.webp" alt="Car Rental" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="project-card__view">View on GitHub <i class="fab fa-github"></i></span>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Car Rental</h3>
+            <p class="project-card__desc">A car rental platform enabling booking and management with real-time availability and secure payments.</p>
+            <div class="project-card__meta">
+              <span class="project-card__tag">PHP</span>
+              <span class="project-card__tag">MySQL</span>
+              <span class="project-card__tag">Bootstrap</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- â•â•â•â•â•â•â•â•â•â•â• LOGO PROJECTS â•â•â•â•â•â•â•â•â•â•â• -->
+      <article class="project-card project-card--logo" data-category="logo">
+        <div class="project-card__visual">
+          <img src="assets/images/projects/logo01.webp" alt="Personal Brand Logo" loading="lazy">
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Personal Brand Logo</h3>
+          <p class="project-card__desc">Samuel Kamau Kangethe</p>
+          <div class="project-card__meta">
+            <span class="project-card__tag">Illustrator</span>
+            <span class="project-card__tag">Photoshop</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-card--logo" data-category="logo">
+        <div class="project-card__visual">
+          <img src="assets/images/projects/logo02.webp" alt="Asili Start Logo" loading="lazy">
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Asili Start</h3>
+          <p class="project-card__desc">An organisation that showcases startups for investors to bid.</p>
+          <div class="project-card__meta">
+            <span class="project-card__tag">Illustrator</span>
+            <span class="project-card__tag">Photoshop</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-card--logo" data-category="logo">
+        <div class="project-card__visual">
+          <img src="assets/images/projects/logo03.webp" alt="Victory Fashion Designers" loading="lazy">
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Victory Fashion Designers</h3>
+          <p class="project-card__desc">A fashion brand showcasing designer clothing and accessories.</p>
+          <div class="project-card__meta">
+            <span class="project-card__tag">Illustrator</span>
+            <span class="project-card__tag">Photoshop</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-card--logo" data-category="logo">
+        <div class="project-card__visual">
+          <img src="assets/images/projects/logo04.webp" alt="JnK Etsy Sellers" loading="lazy">
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">JnK Etsy Sellers</h3>
+          <p class="project-card__desc">An Etsy seller personal brand.</p>
+          <div class="project-card__meta">
+            <span class="project-card__tag">Illustrator</span>
+            <span class="project-card__tag">Photoshop</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-card--logo" data-category="logo">
+        <div class="project-card__visual">
+          <img src="assets/images/projects/Nestra_Logo.webp" alt="Nestra" loading="lazy">
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Nestra</h3>
+          <p class="project-card__desc">Real estate company logo design.</p>
+          <div class="project-card__meta">
+            <span class="project-card__tag">Illustrator</span>
+            <span class="project-card__tag">Photoshop</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-card--logo" data-category="logo">
+        <div class="project-card__visual">
+          <img src="assets/images/projects/logo06.webp" alt="Sylvie Jars Logo" loading="lazy">
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Sylvie Jars</h3>
+          <p class="project-card__desc">Personal brand for handcrafted, unique, and custom designed jars.</p>
+          <div class="project-card__meta">
+            <span class="project-card__tag">Illustrator</span>
+            <span class="project-card__tag">Photoshop</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-card--logo" data-category="logo">
+        <div class="project-card__visual">
+          <img src="assets/images/projects/logo07.webp" alt="Zetech Lunch Hub" loading="lazy">
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Zetech Lunch Hub</h3>
+          <p class="project-card__desc">A school cafeteria logo.</p>
+          <div class="project-card__meta">
+            <span class="project-card__tag">Illustrator</span>
+            <span class="project-card__tag">Photoshop</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-card--logo" data-category="logo">
+        <div class="project-card__visual">
+          <img src="assets/images/projects/logo08.webp" alt="Vexx Entertainment" loading="lazy">
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Vexx Ent.</h3>
+          <p class="project-card__desc">An entertainment brand logo.</p>
+          <div class="project-card__meta">
+            <span class="project-card__tag">Illustrator</span>
+            <span class="project-card__tag">Photoshop</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- â•â•â•â•â•â•â•â•â•â•â• VIDEO PROJECTS â•â•â•â•â•â•â•â•â•â•â• -->
+      <article class="project-card project-card--video" data-category="video">
+        <div class="project-card__visual">
+          <video preload="metadata" muted loop playsinline>
+            <source src="assets/videos/vid01.mp4" type="video/mp4">
+          </video>
+          <div class="project-card__play-btn">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Digital Agency Advert</h3>
+          <p class="project-card__desc">Professional video production showcasing the services of a digital agency.</p>
+          <div class="project-card__meta">
+            <span class="project-card__tag">Premiere Pro</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-card--video" data-category="video">
+        <div class="project-card__visual">
+          <video preload="metadata" muted loop playsinline>
+            <source src="assets/videos/vid02.mp4" type="video/mp4">
+          </video>
+          <div class="project-card__play-btn">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Logo Reveal</h3>
+          <p class="project-card__desc">Demonstration video showing the capabilities of the logo reveal animation.</p>
+          <div class="project-card__meta">
+            <span class="project-card__tag">After Effects</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Empty State -->
+    <div class="empty-state" style="display: none;">
+      <div class="empty-state__icon"><i class="fas fa-rocket"></i></div>
+      <h3 class="empty-state__title">Coming Soon</h3>
+      <p class="empty-state__desc">Exciting projects in this category are currently in development. Check back soon!</p>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-banner__content">
+      <span class="cta-banner__tag">( Let's Collaborate )</span>
+      <h2 class="cta-banner__title">Have a project in mind?</h2>
+      <p class="cta-banner__desc">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+      <a href="contact.html" class="cta-banner__btn">
+        <span>Get in Touch</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <span class="footer__logo">SK<span class="footer__logo-dot"></span></span>
+        <p class="footer__copy">&copy; 2024 Samuel Kamau Kangethe. All rights reserved.</p>
+      </div>
+      <div class="footer__right">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer__social"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/Vexx-bit" target="_blank" rel="noopener noreferrer" class="footer__social"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

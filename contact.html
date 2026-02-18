@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <link rel="canonical" href="https://samuelkangethe.me/contact.html" />
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Get in touch with Samuel Kamau Kangethe — Let's discuss your next web, app, or design project. Based in Kenya, available worldwide.">
+  <meta name="author" content="Samuel Kamau Kangethe">
+  <meta name="keywords" content="Contact Samuel Kamau Kangethe, Hire Developer Kenya, Web Development, App Development, UI/UX Design, Freelancer">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://samuelkangethe.me/contact.html">
+  <meta property="og:title" content="Samuel Kamau Kangethe — Contact">
+  <meta property="og:description" content="Let's discuss your next project. Full-Stack Developer and Designer available for new opportunities.">
+  <meta property="og:image" content="https://samuelkangethe.me/assets/images/hero_bg.png">
+  <meta property="og:site_name" content="Samuel Kamau Kangethe">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Vexspitta195556">
+  <meta name="twitter:title" content="Samuel Kamau Kangethe — Contact">
+  <meta name="twitter:description" content="Let's discuss your next project. Full-Stack Developer and Designer available for new opportunities.">
+  <meta name="twitter:image" content="https://samuelkangethe.me/assets/images/hero_bg.png">
+
+  <title>Samuel Kamau Kangethe — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>(function(){ emailjs.init('1Yy9BmUn8aid2j5Rs'); })();</script>
+</head>
+<body>
+
+  <!-- GRAIN OVERLAY -->
+  <div class="grain"></div>
+
+  <!-- PAGE TRANSITION -->
+  <div class="page-transition">
+    <div class="transition-row row-1">
+      <div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div>
+    </div>
+    <div class="transition-row row-2">
+      <div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="nav__logo">
+      <a href="index.html" class="nav__logo-text">SK<span class="nav__logo-dot"></span></a>
+    </div>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="portfolio.html" class="nav__link">Projects</a>
+      <a href="#" class="nav__link nav__link--active">Contact</a>
+    </div>
+    <div class="nav__actions">
+      <a href="portfolio.html" class="nav__cta">View Work</a>
+    </div>
+    <div class="nav__hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__links">
+      <a href="index.html" class="mobile-menu__link">Home</a>
+      <a href="portfolio.html" class="mobile-menu__link">Projects</a>
+      <a href="#" class="mobile-menu__link">Contact</a>
+    </div>
+  </div>
+
+  <!-- CONTACT HERO -->
+  <section class="contact-hero">
+    <div class="contact-hero__content">
+      <div class="contact-hero__badge">
+        <span class="contact-hero__badge-dot"></span>
+        <span class="contact-hero__badge-text">Available for work</span>
+      </div>
+      <h1 class="contact-hero__title">
+        <span class="title-line"><span class="title-word">Let&rsquo;s build</span></span>
+        <span class="title-line"><span class="title-word">something <em>great</em></span></span>
+        <span class="title-line"><span class="title-word">together.</span></span>
+      </h1>
+      <p class="contact-hero__desc">Got a project, question, or just want to say hello? Drop me a message and I'll get back to you within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <main class="contact-main">
+    <div class="contact-main__grid">
+
+      <!-- LEFT - Form -->
+      <div class="contact-main__form-side">
+        <div class="form-card">
+          <div class="form-card__header">
+            <h2 class="form-card__title">Send a message</h2>
+            <p class="form-card__subtitle">Fill in the details below and I'll respond promptly.</p>
+          </div>
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="user_name" class="form-label">Name</label>
+                <input type="text" id="user_name" name="user_name" class="form-input" placeholder="Your full name" required autocomplete="name" />
+                <div class="form-input__underline"></div>
+              </div>
+              <div class="form-group">
+                <label for="user_email" class="form-label">Email</label>
+                <input type="email" id="user_email" name="user_email" class="form-input" placeholder="you@example.com" required autocomplete="email" />
+                <div class="form-input__underline"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="project_type" class="form-label">Project Type</label>
+              <select id="project_type" name="project_type" class="form-input form-select">
+                <option value="" disabled selected>What do you need help with?</option>
+                <option value="web-development">Web Development</option>
+                <option value="app-development">App Development</option>
+                <option value="discord-bot">Discord Bot</option>
+                <option value="logo-design">Logo Design</option>
+                <option value="video-production">Video Production</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="form-input__underline"></div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about your project, goals, and timeline..." rows="5" required></textarea>
+              <div class="form-input__underline"></div>
+            </div>
+            <div class="form-turnstile">
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAACfG1C6CkYCIayh7" data-theme="dark" data-size="normal"></div>
+            </div>
+            <button type="submit" class="form-submit btn-submit">
+              <span class="form-submit__text">Send Message</span>
+              <span class="form-submit__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- RIGHT - Info cards -->
+      <div class="contact-main__info-side">
+        <div class="info-card info-card--highlight">
+          <div class="info-card__glow"></div>
+          <div class="info-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+            </svg>
+          </div>
+          <h3 class="info-card__title">Prefer email?</h3>
+          <p class="info-card__text">Send a message using the form or reach out directly - I check my inbox regularly.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path>
+            </svg>
+          </div>
+          <h3 class="info-card__title">Based in Kenya</h3>
+          <p class="info-card__text">Available for remote work worldwide and local projects.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="info-card__title">Fast response</h3>
+          <p class="info-card__text">I typically respond within 24 hours, usually much sooner.</p>
+        </div>
+        <div class="info-card info-card--socials">
+          <h3 class="info-card__title">Connect with me</h3>
+          <div class="social-links">
+            <a href="https://x.com/Vexspitta195556" target="_blank" rel="noopener noreferrer" class="social-pill">
+              <i class="fab fa-x-twitter"></i>
+              <span>Twitter / X</span>
+            </a>
+            <a href="https://github.com/Vexx-bit" target="_blank" rel="noopener noreferrer" class="social-pill">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/samuel-k-a09817227/" target="_blank" rel="noopener noreferrer" class="social-pill">
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__content">
+      <p>&copy; 2026 Samuel Kamau Kangethe</p>
+      <a href="https://rapidwebke.vercel.app/" target="_blank" rel="noopener noreferrer">Powered by Rapid Web KE</a>
+    </div>
+  </footer>
+
+  <!-- NOTIFICATION -->
+  <div id="notification-container" class="notification-container">
+    <div id="notification" class="notification">
+      <div class="notification-icon"></div>
+      <div class="notification-content">
+        <h3 id="notification-title" class="notification-title"></h3>
+        <p id="notification-message" class="notification-message"></p>
+      </div>
+      <button id="notification-close" class="notification-close">&times;</button>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/contact-page.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

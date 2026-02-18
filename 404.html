@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <title>404 — Page Not Found | Samuel Kamau Kangethe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0a; color: #fff;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh; display: flex;
+      flex-direction: column; align-items: center;
+      justify-content: center; text-align: center;
+      padding: 2em;
+    }
+    .code {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(5rem, 20vw, 12rem);
+      font-weight: 800; line-height: 1;
+      color: #E8A838; letter-spacing: -0.04em;
+    }
+    .message {
+      font-size: 1.1rem; color: rgba(255,255,255,0.55);
+      margin: 1em 0 2em; max-width: 400px; line-height: 1.6;
+    }
+    .back {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 32px; border-radius: 100px;
+      background: #E8A838; color: #0a0a0a;
+      font-size: 14px; font-weight: 600;
+      text-decoration: none; text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+    .back:hover {
+      background: #F0BD5E; transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(232,168,56,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="code">404</div>
+  <p class="message">The page you're looking for doesn't exist or has been moved.</p>
+  <a href="/" class="back">Back to Home</a>
+</body>
+</html>

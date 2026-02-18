@@ -1,0 +1,16 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+*.code-workspace
+
+# Temp files
+*.ps1
+*.bak
+*.tmp
+
+# Designs folder (not part of site)
+/Designs/
