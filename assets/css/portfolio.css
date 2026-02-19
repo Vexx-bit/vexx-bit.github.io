@@ -171,7 +171,7 @@
   .portfolio-hero { padding: 7em 2em 3em; }
   .portfolio-hero__title { letter-spacing: -0.03em; }
 
-  .filter-bar { padding: 0.9em 2em; top: 62px; }
+  .filter-bar { padding: 0.9em 2em; top: 70px; }
   .projects-section { padding: 5em 2em 3em; }
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
 
@@ -199,16 +199,36 @@
 
   .stat__number { font-size: clamp(1.5rem, 5vw, 2.5rem); }
 
-  /* Filter bar — horizontal scrollable */
-  .filter-bar { padding: 0.75em 1.5em; top: 54px; }
+  /* Filter bar — compact single row with horizontal scroll */
+  .filter-bar { padding: 0.6em 1.5em; top: 61px; }
 
   .filter-bar__inner {
     gap: 0.75em;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
   }
 
-  .filter-bar__label { font-size: 10px; margin-bottom: -0.25em; }
+  /* Fade edge hint for scrollable buttons */
+  .filter-bar__inner::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 3em;
+    background: linear-gradient(to right, transparent, rgba(10,10,10,0.97));
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .filter-bar__label {
+    font-size: 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    color: var(--accent);
+    letter-spacing: 1.5px;
+  }
 
   .filter-bar__buttons {
     display: flex;
@@ -216,20 +236,21 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     gap: 6px;
-    width: 100%;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
+    padding-right: 2.5em;
+    scrollbar-width: none;
   }
 
   .filter-bar__buttons::-webkit-scrollbar { display: none; }
 
   .filter-btn {
     flex-shrink: 0;
-    padding: 8px 16px;
+    padding: 7px 14px;
     font-size: 12px;
   }
 
   .filter-btn__count {
-    min-width: 20px; height: 20px;
+    min-width: 18px; height: 18px;
     font-size: 10px;
   }
 
@@ -280,8 +301,8 @@
   .stat__number { font-size: 1.5rem; }
   .stat__label { font-size: 10px; letter-spacing: 1px; }
 
-  .filter-bar { padding: 0.6em 1em; top: 48px; }
-  .filter-btn { padding: 7px 14px; font-size: 11px; }
+  .filter-bar { padding: 0.5em 1.25em; top: 61px; }
+  .filter-btn { padding: 6px 12px; font-size: 11px; }
 
   .projects-section { padding: 4.5em 1.25em 2em; }
   .projects-grid { gap: 1.25em; }
