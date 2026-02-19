@@ -129,7 +129,7 @@
       var tl = gsap.timeline();
       tl.to(hero, { clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", duration: 1.8, ease: "hop" })
         .to(".hero__bg img", { scale: 1, duration: 2, ease: "power3.inOut" }, "-=1.5")
-        .to(".hero__title-word", { y: 0, duration: 1.2, stagger: 0.15, ease: "power4.out" }, "-=1.5")
+        .to(".hero__title-word", { y: -6, duration: 1.2, stagger: 0.15, ease: "power4.out" }, "-=1.5")
         .to(".hero__tag", { opacity: 1, duration: 0.8, ease: "power3.out" }, "-=0.8")
         .to(".hero__bottom", { opacity: 1, duration: 0.8, ease: "power3.out" }, "-=0.5");
     }

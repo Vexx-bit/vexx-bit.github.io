@@ -129,7 +129,7 @@
         ease: "power3.out",
       })
       .to(".title-word", {
-        y: "0%",
+        y: "-6px",
         duration: 1,
         stagger: 0.12,
         ease: "hop",

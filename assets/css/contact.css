@@ -245,7 +245,6 @@ button { cursor: none; font-family: inherit; }
 .title-word {
   display: inline-block;
   transform: translateY(200%);
-  padding-bottom: 0.12em;
 }
 
 .contact-hero__desc {

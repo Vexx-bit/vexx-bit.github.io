@@ -152,7 +152,7 @@
         opacity: 1, y: 0, duration: 0.8, ease: "power3.out",
       })
       .to(".title-word", {
-        y: "0%", duration: 1.2, stagger: 0.15, ease: "hop",
+        y: "-6px", duration: 1.2, stagger: 0.15, ease: "hop",
       }, "-=0.5")
       .to(".portfolio-hero__desc", {
         opacity: 1, duration: 0.8, ease: "power3.out",
