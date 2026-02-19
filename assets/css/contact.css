@@ -593,6 +593,25 @@ button { cursor: none; font-family: inherit; }
 
 .footer__content a:hover { color: var(--accent); }
 
+/* Powered-by branding */
+.powered-by {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; color: var(--text-dim);
+  letter-spacing: 1px; transition: color 0.3s;
+}
+
+.powered-by:hover { color: var(--accent); }
+
+.powered-by__icon {
+  width: 18px; height: 18px;
+  object-fit: contain;
+  vertical-align: middle;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.powered-by:hover .powered-by__icon { opacity: 1; }
+
 /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    RESPONSIVE â€” 1024px
    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
