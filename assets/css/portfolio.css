@@ -201,12 +201,12 @@
 
   /* Filter bar — compact single row with horizontal scroll */
   .filter-bar {
+    position: fixed;
     top: 61px;
     padding: 0;
     min-height: 44px;
     display: flex;
     align-items: stretch;
-    position: relative;
   }
 
   /* Fade edge hint — sits on the bar itself, not inside the scrolling row */
