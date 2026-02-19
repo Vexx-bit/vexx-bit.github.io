@@ -241,7 +241,9 @@ button { cursor: none; font-family: inherit; }
 
 .title-line {
   display: block;
-  padding: 0.05em 0;
+  overflow: hidden;
+  padding-bottom: 0.2em;
+  margin-bottom: -0.2em;
 }
 
 .title-word {
