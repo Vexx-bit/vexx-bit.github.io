@@ -320,7 +320,7 @@ img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .section-header__title {
   font-family: var(--font-heading);
   font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: 800; line-height: 1.05; letter-spacing: -0.03em;
+  font-weight: 800; line-height: 1.2; letter-spacing: -0.03em;
 }
 
 /* ─── WORK (CriticalDanger-style horizontal scroll) ─── */
@@ -356,7 +356,7 @@ img { width: 100%; height: 100%; object-fit: cover; display: block; }
   color: transparent;
   -webkit-text-stroke: 2px rgba(232,168,56,0.2);
   letter-spacing: -0.03em;
-  line-height: 1;
+  line-height: 1.2;
   white-space: nowrap;
   user-select: none;
   text-shadow: 0 0 80px rgba(232,168,56,0.06);
@@ -513,7 +513,7 @@ img { width: 100%; height: 100%; object-fit: cover; display: block; }
   font-size: clamp(2.5rem, 4vw, 4rem);
   font-weight: 800; display: block;
   color: var(--accent);
-  line-height: 1;
+  line-height: 1.15;
 }
 
 .about__stat-label {
@@ -580,7 +580,7 @@ img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .connect__title {
   font-family: var(--font-heading);
   font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: 800; line-height: 1.05;
+  font-weight: 800; line-height: 1.2;
   letter-spacing: -0.03em; margin: 0.5em 0;
 }
 
