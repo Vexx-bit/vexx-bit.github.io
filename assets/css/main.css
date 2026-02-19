@@ -260,6 +260,7 @@ img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .hero__title-word {
   display: inline-block;
   transform: translateY(200%);
+  padding-bottom: 0.12em;
 }
 
 .hero__bottom {
@@ -664,6 +665,11 @@ img { width: 100%; height: 100%; object-fit: cover; display: block; }
 /* ═══════════════════════════════════════════
    RESPONSIVE
    ═══════════════════════════════════════════ */
+
+/* ─── Laptop / small desktop (1280px and below) ─── */
+@media (max-width: 1280px) {
+  .hero__title { font-size: clamp(3rem, 7.5vw, 7rem); }
+}
 
 @media (max-width: 1024px) {
   .about__content { grid-template-columns: 1fr; }
