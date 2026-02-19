@@ -1,10 +1,9 @@
-﻿/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-   SAMUEL KAMAU KANGETHE â€” CONTACT PAGE v2
-   Premium card-based design
-   Accent: Warm Amber #E8A838
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+﻿/* ═══════════════════════════════════════════
+   SAMUEL KAMAU KANGETHE - CONTACT PAGE v2
+   Premium card-based design | Accent: Warm Amber #E8A838
+   ═══════════════════════════════════════════ */
 
-/* â”€â”€â”€ VARIABLES â”€â”€â”€ */
+/* --- VARIABLES --- */
 :root {
   --bg: #0a0a0a;
   --bg-secondary: #111111;
@@ -231,7 +230,7 @@ button { cursor: none; font-family: inherit; }
   font-size: clamp(2.8rem, 7vw, 5.5rem);
   font-weight: 800; line-height: 1.2;
   letter-spacing: -0.03em;
-  margin-bottom: 0.5em; padding: 0.05em 0;
+  margin-bottom: 0.5em; padding: 0 0 0.15em;
 }
 
 .contact-hero__title em {
@@ -241,9 +240,6 @@ button { cursor: none; font-family: inherit; }
 
 .title-line {
   display: block;
-  overflow: hidden;
-  padding-bottom: 0.2em;
-  margin-bottom: -0.2em;
 }
 
 .title-word {
