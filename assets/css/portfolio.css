@@ -200,19 +200,17 @@
   .stat__number { font-size: clamp(1.5rem, 5vw, 2.5rem); }
 
   /* Filter bar — compact single row with horizontal scroll */
-  .filter-bar { padding: 0.6em 1.5em; top: 61px; }
-
-  .filter-bar__inner {
-    gap: 0.75em;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    overflow: hidden;
+  .filter-bar {
+    top: 61px;
+    padding: 0;
+    min-height: 44px;
+    display: flex;
+    align-items: stretch;
     position: relative;
   }
 
-  /* Fade edge hint for scrollable buttons */
-  .filter-bar__inner::after {
+  /* Fade edge hint — sits on the bar itself, not inside the scrolling row */
+  .filter-bar::after {
     content: '';
     position: absolute;
     right: 0; top: 0; bottom: 0;
@@ -222,23 +220,38 @@
     z-index: 1;
   }
 
+  .filter-bar__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0 3em 0 1.5em;
+    width: 100%;
+  }
+
+  .filter-bar__inner::-webkit-scrollbar { display: none; }
+
   .filter-bar__label {
     font-size: 10px;
     white-space: nowrap;
     flex-shrink: 0;
     color: var(--accent);
     letter-spacing: 1.5px;
+    margin-right: 0.75em;
+    padding: 0.6em 0;
   }
 
   .filter-bar__buttons {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     gap: 6px;
-    padding-bottom: 2px;
-    padding-right: 2.5em;
-    scrollbar-width: none;
+    align-items: center;
+    padding: 0.5em 0;
   }
 
   .filter-bar__buttons::-webkit-scrollbar { display: none; }
@@ -301,8 +314,9 @@
   .stat__number { font-size: 1.5rem; }
   .stat__label { font-size: 10px; letter-spacing: 1px; }
 
-  .filter-bar { padding: 0.5em 1.25em; top: 61px; }
-  .filter-btn { padding: 6px 12px; font-size: 11px; }
+  .filter-bar { top: 61px; }
+  .filter-bar__inner { padding: 0 3em 0 1.25em; }
+  .filter-btn { padding: 6px 12px; font-size: 11px; flex-shrink: 0; }
 
   .projects-section { padding: 4.5em 1.25em 2em; }
   .projects-grid { gap: 1.25em; }
