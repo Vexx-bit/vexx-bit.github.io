@@ -229,7 +229,7 @@ button { cursor: none; font-family: inherit; }
 .contact-hero__title {
   font-family: var(--font-heading);
   font-size: clamp(2.8rem, 7vw, 5.5rem);
-  font-weight: 800; line-height: 1.05;
+  font-weight: 800; line-height: 1.2;
   letter-spacing: -0.03em;
   margin-bottom: 0.5em; padding: 0.05em 0;
 }
@@ -240,13 +240,13 @@ button { cursor: none; font-family: inherit; }
 }
 
 .title-line {
-  display: block; overflow: hidden;
+  display: block;
   padding: 0.05em 0;
 }
 
 .title-word {
   display: inline-block;
-  transform: translateY(100%);
+  transform: translateY(200%);
 }
 
 .contact-hero__desc {
@@ -332,6 +332,18 @@ button { cursor: none; font-family: inherit; }
 }
 
 .form-input::placeholder { color: var(--text-dim); }
+
+/* Kill browser autofill white/yellow background */
+.form-input:-webkit-autofill,
+.form-input:-webkit-autofill:hover,
+.form-input:-webkit-autofill:focus,
+.form-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 9999px var(--bg-card) inset !important;
+  box-shadow: 0 0 0 9999px var(--bg-card) inset !important;
+  -webkit-text-fill-color: var(--text) !important;
+  caret-color: var(--text);
+  transition: background-color 9999s ease-in-out 0s;
+}
 
 .form-input__underline {
   position: absolute; bottom: 0; left: 0;
