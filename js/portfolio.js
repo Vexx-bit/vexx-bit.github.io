@@ -38,22 +38,24 @@
     /* --- FILTER BAR FIXED SHOW/HIDE (Lenis-compatible sticky) --- */
     var filterBar = document.querySelector(".filter-bar");
     var heroSection = document.querySelector(".portfolio-hero");
-    var nav = document.querySelector(".nav");
+    var siteHeader = document.querySelector(".site-header");
 
     if (filterBar && heroSection) {
       lenis.on("scroll", function (e) {
         var heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
         if (e.scroll > heroBottom - 80) {
           filterBar.classList.add("is-visible");
+          if (siteHeader) siteHeader.classList.add("filter-visible");
         } else {
           filterBar.classList.remove("is-visible");
+          if (siteHeader) siteHeader.classList.remove("filter-visible");
         }
 
-        if (nav) {
+        if (siteHeader) {
           if (e.scroll > 20) {
-            nav.classList.add("scrolled");
+            siteHeader.classList.add("scrolled");
           } else {
-            nav.classList.remove("scrolled");
+            siteHeader.classList.remove("scrolled");
           }
         }
       });

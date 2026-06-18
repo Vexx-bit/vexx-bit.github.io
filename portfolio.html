@@ -31,23 +31,55 @@
   <div class="cursor"></div>
   <div class="cursor-follower"></div>
 
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav__logo">
-      <a href="index.html" class="nav__logo-text">SK<span class="nav__logo-dot"></span></a>
-    </div>
-    <div class="nav__links">
-      <a href="index.html" class="nav__link">Home</a>
-      <a href="#projects" class="nav__link">Projects</a>
-      <a href="contact.html" class="nav__link">Contact</a>
-    </div>
-    <div class="nav__actions">
-      <a href="contact.html" class="nav__cta">Get in Touch</a>
-    </div>
-    <div class="nav__hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
+  <!-- Site Header (Unified Navigation & Filter Bar) -->
+  <header class="site-header">
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav__logo">
+        <a href="index.html" class="nav__logo-text">SK<span class="nav__logo-dot"></span></a>
+      </div>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+      <div class="nav__actions">
+        <a href="contact.html" class="nav__cta">Get in Touch</a>
+      </div>
+      <div class="nav__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+      <div class="filter-bar__inner">
+        <div class="filter-bar__label">Filter by</div>
+        <div class="filter-bar__buttons">
+          <button class="filter-btn active" data-filter="all">
+            <span class="filter-btn__text">All Projects</span>
+            <span class="filter-btn__count">18</span>
+          </button>
+          <button class="filter-btn" data-filter="web">
+            <span class="filter-btn__text">Web Dev</span>
+            <span class="filter-btn__count">8</span>
+          </button>
+          <button class="filter-btn" data-filter="app">
+            <span class="filter-btn__text">Mobile Dev</span>
+            <span class="filter-btn__count">0</span>
+          </button>
+          <button class="filter-btn" data-filter="bot">
+            <span class="filter-btn__text">AI</span>
+            <span class="filter-btn__count">0</span>
+          </button>
+          <button class="filter-btn" data-filter="logo">
+            <span class="filter-btn__text">Brand Design</span>
+            <span class="filter-btn__count">8</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </header>
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
@@ -92,40 +124,12 @@
     </div>
   </header>
 
-  <!-- Filter Bar -->
-  <section class="filter-bar" id="projects">
-    <div class="filter-bar__inner">
-      <div class="filter-bar__label">Filter by</div>
-      <div class="filter-bar__buttons">
-        <button class="filter-btn active" data-filter="all">
-          <span class="filter-btn__text">All Projects</span>
-          <span class="filter-btn__count">18</span>
-        </button>
-        <button class="filter-btn" data-filter="web">
-          <span class="filter-btn__text">Web Dev</span>
-          <span class="filter-btn__count">8</span>
-        </button>
-        <button class="filter-btn" data-filter="app">
-          <span class="filter-btn__text">Mobile Dev</span>
-          <span class="filter-btn__count">0</span>
-        </button>
-        <button class="filter-btn" data-filter="bot">
-          <span class="filter-btn__text">AI</span>
-          <span class="filter-btn__count">0</span>
-        </button>
-        <button class="filter-btn" data-filter="logo">
-          <span class="filter-btn__text">Brand Design</span>
-          <span class="filter-btn__count">8</span>
-        </button>
-      </div>
-    </div>
-  </section>
 
   <!-- Projects Grid -->
-  <section class="projects-section">
+  <section class="projects-section" id="projects">
     <div class="projects-grid">
 
-      <!-- â•â•â•â•â•â•â•â•â•â•â• WEB PROJECTS â•â•â•â•â•â•â•â•â•â•â• -->
+      <!-- ═══════════ WEB PROJECTS ═══════════ -->
       <article class="project-card" data-category="web">
         <a href="https://sylviejar.vercel.app/" class="project-card__link" target="_blank" rel="noopener noreferrer">
           <div class="project-card__visual">
@@ -282,7 +286,7 @@
         </a>
       </article>
 
-      <!-- â•â•â•â•â•â•â•â•â•â•â• LOGO PROJECTS â•â•â•â•â•â•â•â•â•â•â• -->
+      <!-- ═══════════ LOGO PROJECTS ═══════════ -->
       <article class="project-card project-card--logo" data-category="logo">
         <div class="project-card__visual">
           <img src="assets/images/projects/logo01.webp" alt="Personal Brand Logo" loading="lazy">
@@ -395,7 +399,7 @@
         </div>
       </article>
 
-      <!-- â•â•â•â•â•â•â•â•â•â•â• VIDEO PROJECTS â•â•â•â•â•â•â•â•â•â•â• -->
+      <!-- ═══════════ VIDEO PROJECTS ═══════════ -->
       <article class="project-card project-card--video" data-category="video">
         <div class="project-card__visual">
           <video preload="metadata" muted loop playsinline>
