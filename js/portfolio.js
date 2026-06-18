@@ -1,4 +1,4 @@
-﻿/* ===================================================
+/* ===================================================
    PORTFOLIO PAGE - IMMERSIVE INTERACTIONS
    Inspired by: ToyFight filters, Zetr scroll,
    Camille Mormal slider, Modular clip-paths
@@ -38,6 +38,7 @@
     /* --- FILTER BAR FIXED SHOW/HIDE (Lenis-compatible sticky) --- */
     var filterBar = document.querySelector(".filter-bar");
     var heroSection = document.querySelector(".portfolio-hero");
+    var nav = document.querySelector(".nav");
 
     if (filterBar && heroSection) {
       lenis.on("scroll", function (e) {
@@ -46,6 +47,14 @@
           filterBar.classList.add("is-visible");
         } else {
           filterBar.classList.remove("is-visible");
+        }
+
+        if (nav) {
+          if (e.scroll > 20) {
+            nav.classList.add("scrolled");
+          } else {
+            nav.classList.remove("scrolled");
+          }
         }
       });
     }
